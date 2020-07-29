@@ -24,7 +24,7 @@ authors_new = ET.Element("authors")
 
 
 # tree = ET.ElementTree(authors_new)
-# tree.write("authors.xml")
+# tree.write("authors.xml")a
 
 with open(config['pc']['CONSULTAS'], mode='w') as employee_file:
     employee_writer = csv.writer(
