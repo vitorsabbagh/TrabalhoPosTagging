@@ -1,3 +1,5 @@
+from nltk.tokenize import word_tokenize
+from nltk.corpus import stopwords
 from nltk.tokenize import RegexpTokenizer
 import math
 import unidecode
@@ -8,13 +10,15 @@ import csv
 import nltk
 from nltk import FreqDist
 nltk.download('punkt')
+nltk.download('stopwords')
+
+loop_limiter = 100000
+p = print
 
 
 def shave(myString):
-
     # tokenizer = RegexpTokenizer(r'\w+')
     # myString = tokenizer.tokenize(myString)
-
     myString = myString.replace('"', '').replace(';', '').replace(
         '\n', ' ').replace('\r', '').replace('  ', ' ').replace('  ', ' ').upper()
     # myString = myString.str.findall('\w{4,}').str.join(' ')
@@ -37,7 +41,7 @@ tokens = []
 for itemLEIA in itemsLEIA:
     doc = minidom.parse(itemLEIA)
     records = doc.getElementsByTagName('RECORD')
-    for record in records[:10]:
+    for record in records[:loop_limiter]:
         if record.getElementsByTagName('ABSTRACT'):
             auxAbstract = record.getElementsByTagName('ABSTRACT')[
                 0].firstChild.data
@@ -45,7 +49,7 @@ for itemLEIA in itemsLEIA:
             auxAbstract = record.getElementsByTagName('EXTRACT')[
                 0].firstChild.data
         else:
-            auxAbstract = 'XXXXXXXXXXXXXXXX '+record.getElementsByTagName('TITLE')[
+            auxAbstract = record.getElementsByTagName('TITLE')[
                 0].firstChild.data
         tokenizer = RegexpTokenizer(r'\w+')
         # tokens += nltk.word_tokenize(shave(auxAbstract))
@@ -55,21 +59,27 @@ tokens = [f for f in tokens if len(f) > 2]  # remove words smaller then 3 chars
 # remove words with numbers
 tokens = [x for x in tokens if not any(c.isdigit() for c in x)]
 tokens = set(tokens)
+
+stop_words = set(stopwords.words('english'))
+print('\nStop words: ')
+print(stop_words)
+tokens = [w for w in tokens if not w.lower() in stop_words]
 tokens = sorted(tokens)
 # print(tokens)
 
+print('\nLista Invertida: ')
 with open(config['gli']['ESCREVA'], mode='w') as gli_file:
     gli_writer = csv.writer(
         gli_file, delimiter=';', quotechar='"', quoting=csv.QUOTE_NONE, lineterminator='\n')
     gli_writer.writerow(
         ['Term', 'DocNumber'])
 
-    for token in tokens[:5]:
+    for token in tokens[:loop_limiter]:
         auxDocNumbers = []
         for itemLEIA in itemsLEIA:
             doc = minidom.parse(itemLEIA)
             records = doc.getElementsByTagName('RECORD')
-            for record in records[:10]:
+            for record in records[:loop_limiter]:
                 if record.getElementsByTagName('ABSTRACT'):
                     auxAbstract = record.getElementsByTagName('ABSTRACT')[
                         0].firstChild.data
@@ -79,14 +89,17 @@ with open(config['gli']['ESCREVA'], mode='w') as gli_file:
                 else:
                     auxAbstract = 'XXXXXXXXXXXXXXXX '+record.getElementsByTagName('TITLE')[
                         0].firstChild.data
-                if token in auxAbstract.upper():
+
+                # if token in auxAbstract.upper():
+                for x in range(auxAbstract.upper().count(token)):
                     if record.getElementsByTagName(
                             'RECORDNUM'):
                         auxDocNumbers.append(int(record.getElementsByTagName(
                             'RECORDNUM')[0].firstChild.data))
                     # print(auxDocNumbers)
 
-        print(token+'    '+str(auxDocNumbers))
+        print("%30s  " % token, end='')
+        print(auxDocNumbers)
 
         # aux = record.getElementsByTagName('QueryText')[0].firstChild.data
         # aux = unidecode.unidecode(aux)
