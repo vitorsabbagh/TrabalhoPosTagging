@@ -4,41 +4,45 @@ from xml.dom import minidom
 import xml.etree.cElementTree as ET
 import csv
 
-# from ConfigParser import ConfigParser # for python3
-data_file = './src/pc.cfg'
-
 config = ConfigParser()
-
-config.read(data_file)
+config.read('./src/pc.cfg')
 print('\n***Processador de Consultas***')
 print('LEIA: '+config['pc']['LEIA'])
 
-
 doc = minidom.parse(config['pc']['LEIA'])
-# print(doc)
 queries = doc.getElementsByTagName("QUERY")
-
-authors_new = ET.Element("authors")
-
-# ET.SubElement(authors_new, "AUTHORS").text = query.firstChild.data
-
-
-# tree = ET.ElementTree(authors_new)
-# tree.write("authors.xml")a
-
 with open(config['pc']['CONSULTAS'], mode='w') as employee_file:
     employee_writer = csv.writer(
         employee_file, delimiter=';', quotechar='"', quoting=csv.QUOTE_NONE, lineterminator='\n')
     employee_writer.writerow(
         ['Query Number', 'Query Text'])
     for query in queries:
-        aux = query.getElementsByTagName("QueryText")[0].firstChild.data
+        aux = query.getElementsByTagName('QueryText')[0].firstChild.data
         aux = unidecode.unidecode(aux)
         employee_writer.writerow(
-            [query.getElementsByTagName("QueryNumber")[0].firstChild.data, aux.upper().replace('"', '').replace(';', '').replace('\n', ' ').replace('\r', '').replace('  ', ' ').replace('  ', ' ')])
-        # print(
-        #     query.getElementsByTagName("QueryText")[0].firstChild.data)
-        # print(
-        #     query.getElementsByTagName("QueryNumber")[0].firstChild.data)
+            [query.getElementsByTagName('QueryNumber')[0].firstChild.data, aux.upper().replace('"', '').replace(';', '').replace('\n', ' ').replace('\r', '').replace('  ', ' ').replace('  ', ' ')])
 
-    # employee_writer.writerow([author.firstChild.data, 'IT'])
+
+print('\nESPERADOS: '+config['pc']['ESPERADOS'])
+
+doc = minidom.parse(config['pc']['LEIA'])
+queries = doc.getElementsByTagName("QUERY")
+with open(config['pc']['ESPERADOS'], mode='w') as esperados_file:
+    esperados_writer = csv.writer(
+        esperados_file, delimiter=';', quotechar='"', quoting=csv.QUOTE_NONE, lineterminator='\n')
+    esperados_writer.writerow(
+        ['QueryNumber', 'DocNumber', 'DocVotes'])
+    for query in queries:
+        # aux = unidecode.unidecode(aux)
+        auxQueryNumber = query.getElementsByTagName('QueryNumber')[
+            0].firstChild.data
+        items = query.getElementsByTagName('Item')
+        for item in items:
+            auxDocNumber = item.firstChild.data
+            auxScore = item.getAttribute('score')
+            auxVotes = int(auxScore[0]) + int(auxScore[1]) + \
+                int(auxScore[2]) + int(auxScore[3])
+            # print(votes)
+            esperados_writer.writerow(
+                [auxQueryNumber, auxDocNumber, auxVotes])
+            # print(auxDocNumber)
