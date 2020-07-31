@@ -1,4 +1,5 @@
 
+import logging
 from configparser import ConfigParser
 import json
 import pprint
@@ -7,34 +8,16 @@ from sys import exit
 import csv
 p = print
 
-# import h5py
-# import numpy as np
 
-# a = np.array([1, 2, 3, 4])
-# b = np.array([2, 3, 4, 5])
-# p(a * b)
-
-# a = np.random.random(size=(4000, 260))
-# h5f = h5py.File('data.h5', 'w')
-# h5f.create_dataset('dataset_1', data=a)
-# h5f.close()
-
-# h5f = h5py.File('data.h5', 'r')
-# b = h5f['dataset_1'][:]
-# h5f.close()
-# np.allclose(a, b)
-
-# with open('gli.csv') as fh:
-#     dict1 = csv.DictReader(fh, delimiter=';')
-#     # p(dict1.)
-#     for row in dict1:
-#         print(row)
-
-# exit(0)
+logging.basicConfig(filename='buscador.log',
+                    level=logging.DEBUG, format='%(asctime)s %(message)s')
+logging.info('Iniciando Indexador de documentos')
 
 config = ConfigParser()
+logging.info('Iniciando leitura do arquivo de configuração')
 config.read('./cfg/index.cfg')
 
+logging.info('Iniciando leitura da lista invertida')
 lista_invertida = {}
 with open(config['index']['LEIA'], newline='') as csvfile:
     csvreader = csv.reader(csvfile, delimiter=';', quotechar='"')
@@ -53,6 +36,7 @@ for key, value in lista_invertida.items():
 docs = sorted(set(docs))
 # p(docs)
 
+logging.info('Iniciado processamento do modelo')
 Wi = {}
 # print(tfi)
 IDFi = {}
@@ -67,11 +51,13 @@ for term, doclist in lista_invertida.items():
     for doc in doclist:
         Wi[term][doc] = IDFi[term]*1
 
+logging.info('Finalizado processamento do modelo')
 # pprint.pprint(Wi)
 
 with open(config['index']['ESCREVA'], 'w') as file:
     file.write(json.dumps({'Wi': Wi, 'IDFi': IDFi, 'Docs': docs}, indent=4))
 
+logging.info('Finalizado gravação do modelo')
 
 # for term,doclist in lista_invertida.iteritems(): # the basic way
 #     temp = ""

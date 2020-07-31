@@ -1,3 +1,8 @@
+
+import logging
+import unidecode
+from nltk.tokenize import RegexpTokenizer
+from nltk.corpus import stopwords
 import pprint
 import csv
 import json
@@ -8,14 +13,24 @@ from nltk import FreqDist
 from configparser import ConfigParser
 nltk.download('punkt')
 
+
+logging.basicConfig(filename='buscador.log',
+                    level=logging.DEBUG, format='%(asctime)s %(message)s')
+logging.info('Iniciando Módulo de Busca')
+
+
+stop_words = set(stopwords.words('english'))
+
 p = print
 config = ConfigParser()
+logging.info('Iniciando leitura do arquivo de configuração')
 config.read('./cfg/busca.cfg')
 
 
 W_Di = {}
 IDFi = {}
 Docs = {}
+logging.info('Iniciando leitura do modelo')
 with open(config['busca']['MODELO']) as json_file:
     modelo = json.load(json_file)
     W_Di = modelo['Wi']
@@ -37,12 +52,24 @@ W_Qi = {}
 produto_escalar_Q_Di = {}
 distancia_Qi = {}
 Coseno_Qi_Di = {}
+logging.info('Iniciando processamento do modelo')
 with open(config['busca']['CONSULTAS'], newline='') as csvfile:
     csvreader = csv.reader(csvfile, delimiter=';', quotechar='"')
     for query in csvreader:
         query_number = int(query[0])
-        query_terms = list(query[1].replace('?', '').replace(
-            '\'', '').replace('(', '').replace(')', '').split(' '))
+
+        query_sentence = query[1].replace('?', '').replace(
+            '\'', '').replace('(', '').replace(')', '')
+
+        tokenizer = RegexpTokenizer(r'\w+')
+        query_terms = nltk.word_tokenize(unidecode.unidecode(query_sentence))
+        # remove words smaller then 3 chars
+        query_terms = [f for f in query_terms if len(f) > 2]
+        # remove words with numbers
+        query_terms = [x for x in query_terms if not any(
+            c.isdigit() for c in x)]
+        query_terms = [w for w in query_terms if not w.lower() in stop_words]
+
         W_Qi[query_number] = {}
         # consultas[query_number] = {}
         produto_escalar_Q_Di[query_number] = {}
@@ -71,6 +98,7 @@ with open(config['busca']['CONSULTAS'], newline='') as csvfile:
                 Coseno_Qi_Di[query_number][doc_number] = produto_escalar_Q_Di[query_number][doc_number] / \
                     distancia_Qi[query_number]/distancia_Di[doc_number]
 
+logging.info('Finalizado processamento do modelo')
 # pprint.pprint(Coseno_Qi_Di)
 
 position = 0
@@ -80,12 +108,13 @@ with open(config['busca']['RESULTADOS'], 'w') as fp:
             Coseno_Qi_Di[query_number].items(), key=lambda x: x[1], reverse=True)
         position = 0
         for doc_number, coseno in sorted_ranking:
-            position += 1
-            fp.write("%2d;[ %2d, %5d, %2.2f]\n" %
-                     (query_number, position, doc_number, coseno))
+            if coseno > 0.10:
+                position += 1
+                fp.write("%5d; [ %2d, %5d, %2.2f]\n" %
+                         (query_number, position, doc_number, coseno))
 
 
-exit(0)
+logging.info('Finalizada gravação dos resultados')
 
 
 # docs = [0]*3  # Vetor de Documentos

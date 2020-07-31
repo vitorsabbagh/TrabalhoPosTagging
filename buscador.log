@@ -1,0 +1,32 @@
+INFO:root:Iniciando Indexador de documentos
+2020-07-31 12:41:51,491 Iniciando Busca por Modelo Vetorial
+2020-07-31 12:41:51,500 Iniciando leitura do arquivo de configura��o
+2020-07-31 12:41:51,500 Iniciando leitura do modelo
+2020-07-31 12:41:51,677 Iniciando leitura das consultas
+
+2020-07-31 12:56:26,741 Iniciando Processamento de Consultas
+2020-07-31 12:56:26,742 Iniciando leitura do arquivo de configura��o
+2020-07-31 12:56:26,756 Iniciando leitura do arquivo XML de consultas
+2020-07-31 12:56:27,340 Finalizada grava��o das consultas em CSV
+2020-07-31 12:56:27,340 Iniciando leitura do arquivo de pontua��o dos pesquisadores (ESPERADOS)
+2020-07-31 12:56:27,974 Finalizada grava��o dos resultados esperadas
+
+2020-07-31 12:56:38,002 Iniciando Gerador de Lista Invertida
+2020-07-31 12:56:38,003 Iniciando leitura do arquivo de configura��o
+2020-07-31 12:56:38,010 Iniciando gera��o de lista invertida
+2020-07-31 12:56:53,816 Finalizado processamento de lista invertida
+2020-07-31 12:56:53,865 Finalizada grava��o de lista invertida
+
+2020-07-31 12:57:05,329 Iniciando Indexador de documentos
+2020-07-31 12:57:05,330 Iniciando leitura do arquivo de configura��o
+2020-07-31 12:57:05,331 Iniciando leitura da lista invertida
+2020-07-31 12:57:05,388 Iniciado processamento do modelo
+2020-07-31 12:57:05,453 Finalizado processamento do modelo
+2020-07-31 12:57:09,848 Finalizado grava��o do modelo
+
+2020-07-31 12:57:18,680 Iniciando M�dulo de Busca
+2020-07-31 12:57:18,688 Iniciando leitura do arquivo de configura��o
+2020-07-31 12:57:18,689 Iniciando leitura do modelo
+2020-07-31 12:57:18,843 Iniciando processamento do modelo
+2020-07-31 12:57:19,920 Finalizado processamento do modelo
+2020-07-31 12:57:20,149 Finalizada grava��o dos resultados
