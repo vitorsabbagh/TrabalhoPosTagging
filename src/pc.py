@@ -5,7 +5,7 @@ import xml.etree.cElementTree as ET
 import csv
 
 config = ConfigParser()
-config.read('./src/pc.cfg')
+config.read('./cfg/pc.cfg')
 print('\n***Processador de Consultas***')
 print('LEIA: '+config['pc']['LEIA'])
 
@@ -14,8 +14,8 @@ queries = doc.getElementsByTagName("QUERY")
 with open(config['pc']['CONSULTAS'], mode='w') as employee_file:
     employee_writer = csv.writer(
         employee_file, delimiter=';', quotechar='"', quoting=csv.QUOTE_NONE, lineterminator='\n')
-    employee_writer.writerow(
-        ['Query Number', 'Query Text'])
+    # employee_writer.writerow(
+    #     ['Query Number', 'Query Text'])
     for query in queries:
         aux = query.getElementsByTagName('QueryText')[0].firstChild.data
         aux = unidecode.unidecode(aux)
