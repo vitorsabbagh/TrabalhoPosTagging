@@ -26,7 +26,7 @@
  4. modelo.json (Pesos, IDFs e Lista de Documentos)
  5. resultados:csv
 
-**Resultados**:
+**Resultados sem Stemmer**:
 
  `Consulta ; [ Posição, DocNumber, Similaridade - Cos Θ] `
  - 1; [ 1, 533, 0.22]
@@ -36,4 +36,17 @@
  - 100; [  1,   579, 0.36]
  - 100; [  2,   183, 0.33]
  - 100; [  3,  1017, 0.32]
+
+
+**Resultados com Stemmer**:
+
+ `Consulta ; [ Posição, DocNumber, Similaridade - Cos Θ] `
+  -  1; [  1,   533, 0.28]
+  -  1; [  2,    52, 0.25]
+  -  1; [  3,   437, 0.24]
+....
+
+ - 100; [  1,   579, 0.39]
+ - 100; [  2,  1017, 0.38]
+ - 100; [  3,   183, 0.37]
 
