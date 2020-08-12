@@ -1,5 +1,8 @@
 # Trabalho COS738: Recuperação - Modelo Vetorial
 
+**Configurações**
+ 1. A ativação e desativação do STEMMER deve ser feita em cfg/general.cfg
+
 **Base de Documentos**
  1. cf75.xml 
  2. cf76.xml

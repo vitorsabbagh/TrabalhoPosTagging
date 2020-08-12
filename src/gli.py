@@ -1,5 +1,7 @@
+
+import PorterStemmer    
 import logging
-import pprint
+# import pprint
 from sys import exit
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
@@ -11,8 +13,8 @@ from xml.dom import minidom
 import xml.etree.cElementTree as ET
 import csv
 import nltk
-from nltk import FreqDist
-nltk.download('punkt')
+# from nltk import FreqDist
+# nltk.download('punkt')
 nltk.download('stopwords')
 
 
@@ -35,8 +37,8 @@ def shave(myString):
     return myString
 
 
-config = ConfigParser()
 logging.info('Iniciando leitura do arquivo de configuração')
+config = ConfigParser()
 config.read('./cfg/gli.cfg')
 print('\n***Gerador de Lista Invertida***')
 
@@ -47,7 +49,22 @@ docsXML = config['gli']['LEIA'].split(',')
 
 # tokens = [0]*10000
 lista_invertida = {}
+
+
 stop_words = set(stopwords.words('english'))
+
+
+ps = PorterStemmer.PorterStemmer()
+config.read('./cfg/general.cfg')
+STEMMER = bool(config['general']['STEMMER'])
+# if STEMMER:
+#     import PorterStemmer    
+#     ps = PorterStemmer()
+#     for stop_word in stop_words
+#         stop_word = ps.stem(stop_word, 0, len(stop_word)-1)
+#         p(stop_word)
+
+
 new_tokens = []
 logging.info('Iniciando geração de lista invertida')
 for docXML in docsXML:
@@ -77,11 +94,19 @@ for docXML in docsXML:
                 c.isdigit() for c in x)]
             new_tokens = [w for w in new_tokens if not w.lower() in stop_words]
 
+            # if STEMMER:
+            #     for new_token in new_tokens:
+            #         new_token = ps.stem(new_token.lower(), 0, len(new_token)-1)
+                    # p(new_token, end=' -> ')
+                    # p(ps.stem(new_token.lower(), 0, len(new_token)-1))
+
             # tokens += tokenizer.tokenize(shave(auxAbstract))
             # lista_invertida = {'John': 425, 'Liz': 212, 'Isaac': 345}
             for new_token in new_tokens:
+                # if new_token in lista_invertida:                
+                if STEMMER:
+                    new_token = ps.stem(new_token.lower(), 0, len(new_token)-1).upper()
                 if new_token in lista_invertida:
-                    # lista_invertida[new_token] += 1
                     lista_invertida[new_token].append(auxDocNumber)
                 else:
                     lista_invertida[new_token] = [auxDocNumber]
@@ -93,3 +118,4 @@ with open(config['gli']['ESCREVA'], 'w') as fp:
         fp.write("%s;%s\n" % p)
 
 logging.info('Finalizada gravação de lista invertida')
+logging.info('\n\n')

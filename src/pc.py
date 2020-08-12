@@ -58,3 +58,5 @@ with open(config['pc']['ESPERADOS'], mode='w') as esperados_file:
             # print(auxDocNumber)
 
 logging.info('Finalizada gravação dos resultados esperadas')
+
+logging.info('\n\n')

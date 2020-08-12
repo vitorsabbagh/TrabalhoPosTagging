@@ -30,3 +30,543 @@ INFO:root:Iniciando Indexador de documentos
 2020-07-31 12:57:18,843 Iniciando processamento do modelo
 2020-07-31 12:57:19,920 Finalizado processamento do modelo
 2020-07-31 12:57:20,149 Finalizada gravaï¿½ï¿½o dos resultados
+2020-08-11 23:30:55,505 Iniciando Processamento de Consultas
+2020-08-11 23:30:55,506 Iniciando leitura do arquivo de configuraï¿½ï¿½o
+2020-08-11 23:30:55,515 Iniciando leitura do arquivo XML de consultas
+2020-08-11 23:30:55,979 Finalizada gravaï¿½ï¿½o das consultas em CSV
+2020-08-11 23:30:55,980 Iniciando leitura do arquivo de pontuaï¿½ï¿½o dos pesquisadores (ESPERADOS)
+2020-08-11 23:30:56,457 Finalizada gravaï¿½ï¿½o dos resultados esperadas
+2020-08-11 23:32:01,877 Iniciando Processamento de Consultas
+2020-08-11 23:32:01,879 Iniciando leitura do arquivo de configuraï¿½ï¿½o
+2020-08-11 23:32:01,885 Iniciando leitura do arquivo XML de consultas
+2020-08-11 23:32:02,363 Finalizada gravaï¿½ï¿½o das consultas em CSV
+2020-08-11 23:32:02,363 Iniciando leitura do arquivo de pontuaï¿½ï¿½o dos pesquisadores (ESPERADOS)
+2020-08-11 23:32:02,851 Finalizada gravaï¿½ï¿½o dos resultados esperadas
+2020-08-11 23:32:05,032 Iniciando Gerador de Lista Invertida
+2020-08-11 23:32:05,032 Iniciando leitura do arquivo de configuraï¿½ï¿½o
+2020-08-11 23:32:05,049 Iniciando geraï¿½ï¿½o de lista invertida
+2020-08-11 23:32:22,102 Finalizado processamento de lista invertida
+2020-08-11 23:32:22,152 Finalizada gravaï¿½ï¿½o de lista invertida
+2020-08-11 23:32:22,167 Iniciando Indexador de documentos
+2020-08-11 23:32:22,168 Iniciando leitura do arquivo de configuraï¿½ï¿½o
+2020-08-11 23:32:22,172 Iniciando leitura da lista invertida
+2020-08-11 23:32:22,228 Iniciado processamento do modelo
+2020-08-11 23:32:22,286 Finalizado processamento do modelo
+2020-08-11 23:32:26,809 Finalizado gravaï¿½ï¿½o do modelo
+2020-08-11 23:32:26,820 Iniciando Mï¿½dulo de Busca
+2020-08-11 23:32:26,821 Iniciando leitura do arquivo de configuraï¿½ï¿½o
+2020-08-11 23:32:26,822 Iniciando leitura do modelo
+2020-08-11 23:32:27,017 Iniciando processamento do modelo
+2020-08-11 23:32:28,274 Finalizado processamento do modelo
+2020-08-11 23:32:28,500 Finalizada gravaï¿½ï¿½o dos resultados
+2020-08-11 23:33:43,185 Iniciando Gerador de Lista Invertida
+2020-08-11 23:33:43,186 Iniciando leitura do arquivo de configuraï¿½ï¿½o
+2020-08-11 23:33:43,199 Iniciando geraï¿½ï¿½o de lista invertida
+2020-08-11 23:33:58,781 Finalizado processamento de lista invertida
+2020-08-11 23:33:58,830 Finalizada gravaï¿½ï¿½o de lista invertida
+
+
+2020-08-11 23:35:51,359 Iniciando Processamento de Consultas
+2020-08-11 23:35:51,360 Iniciando leitura do arquivo de configuração
+2020-08-11 23:35:51,364 Iniciando leitura do arquivo XML de consultas
+2020-08-11 23:35:51,789 Finalizada gravação das consultas em CSV
+2020-08-11 23:35:51,789 Iniciando leitura do arquivo de pontuação dos pesquisadores (ESPERADOS)
+2020-08-11 23:35:52,270 Finalizada gravação dos resultados esperadas
+2020-08-11 23:35:53,635 Iniciando Gerador de Lista Invertida
+2020-08-11 23:35:53,635 Iniciando leitura do arquivo de configuração
+2020-08-11 23:35:53,653 Iniciando geração de lista invertida
+2020-08-11 23:36:09,796 Finalizado processamento de lista invertida
+2020-08-11 23:36:09,854 Finalizada gravação de lista invertida
+2020-08-11 23:36:09,857 Iniciando Indexador de documentos
+2020-08-11 23:36:09,857 Iniciando leitura do arquivo de configuração
+2020-08-11 23:36:09,858 Iniciando leitura da lista invertida
+2020-08-11 23:36:09,914 Iniciado processamento do modelo
+2020-08-11 23:36:09,973 Finalizado processamento do modelo
+2020-08-11 23:36:14,567 Finalizado gravação do modelo
+2020-08-11 23:36:14,616 Iniciando Módulo de Busca
+2020-08-11 23:36:14,617 Iniciando leitura do arquivo de configuração
+2020-08-11 23:36:14,618 Iniciando leitura do modelo
+2020-08-11 23:36:14,773 Iniciando processamento do modelo
+2020-08-11 23:36:15,820 Finalizado processamento do modelo
+2020-08-11 23:36:16,039 Finalizada gravação dos resultados
+2020-08-12 01:09:39,725 Iniciando Módulo de Busca
+2020-08-12 01:09:39,734 Iniciando leitura do arquivo de configuração
+2020-08-12 01:09:39,735 Iniciando leitura do modelo
+2020-08-12 01:09:39,930 Iniciando processamento do modelo
+2020-08-12 01:10:13,652 Iniciando Módulo de Busca
+2020-08-12 01:10:13,659 Iniciando leitura do arquivo de configuração
+2020-08-12 01:10:13,660 Iniciando leitura do modelo
+2020-08-12 01:10:13,838 Iniciando processamento do modelo
+2020-08-12 01:10:15,620 Finalizado processamento do modelo
+2020-08-12 01:10:16,114 Finalizada gravação dos resultados
+2020-08-12 01:11:20,630 
+
+Iniciando Módulo de Busca
+2020-08-12 01:11:20,636 Iniciando leitura do arquivo de configuração
+2020-08-12 01:11:20,637 Iniciando leitura do modelo
+2020-08-12 01:11:20,802 Iniciando processamento do modelo
+2020-08-12 01:11:22,073 Finalizado processamento do modelo
+2020-08-12 01:11:22,339 Finalizada gravação dos resultados
+2020-08-12 01:12:15,924 Iniciando Módulo de Busca
+2020-08-12 01:12:15,933 Iniciando leitura do arquivo de configuração
+2020-08-12 01:12:15,934 Iniciando leitura do modelo
+2020-08-12 01:12:16,117 Iniciando processamento do modelo
+2020-08-12 01:12:17,372 Finalizado processamento do modelo
+2020-08-12 01:12:17,637 Finalizada gravação dos resultados
+
+
+2020-08-12 01:12:26,385 Iniciando Módulo de Busca
+2020-08-12 01:12:26,393 Iniciando leitura do arquivo de configuração
+2020-08-12 01:12:26,394 Iniciando leitura do modelo
+2020-08-12 01:12:26,560 Iniciando processamento do modelo
+2020-08-12 01:12:27,790 Finalizado processamento do modelo
+2020-08-12 01:12:28,075 Finalizada gravação dos resultados
+
+
+2020-08-12 01:14:59,884 Iniciando Módulo de Busca
+2020-08-12 01:14:59,892 Iniciando leitura do arquivo de configuração
+2020-08-12 01:14:59,893 Iniciando leitura do modelo
+2020-08-12 01:15:00,102 Iniciando processamento do modelo
+2020-08-12 01:15:01,537 Finalizado processamento do modelo
+2020-08-12 01:15:01,879 Finalizada gravação dos resultados
+2020-08-12 01:15:01,879 
+
+
+2020-08-12 01:15:01,885 Iniciando Indexador de documentos
+2020-08-12 01:15:01,885 Iniciando leitura do arquivo de configuração
+2020-08-12 01:15:01,886 Iniciando leitura da lista invertida
+2020-08-12 01:15:01,949 Iniciado processamento do modelo
+2020-08-12 01:15:02,030 Finalizado processamento do modelo
+2020-08-12 01:15:07,363 Finalizado gravação do modelo
+2020-08-12 01:15:07,363 
+
+
+2020-08-12 01:15:07,895 Iniciando Gerador de Lista Invertida
+2020-08-12 01:15:07,896 Iniciando leitura do arquivo de configuração
+2020-08-12 01:15:07,899 Iniciando geração de lista invertida
+2020-08-12 01:15:25,909 Finalizado processamento de lista invertida
+2020-08-12 01:15:25,967 Finalizada gravação de lista invertida
+2020-08-12 01:15:25,967 
+
+
+2020-08-12 01:15:25,972 Iniciando Processamento de Consultas
+2020-08-12 01:15:25,973 Iniciando leitura do arquivo de configuração
+2020-08-12 01:15:25,975 Iniciando leitura do arquivo XML de consultas
+2020-08-12 01:15:26,381 Finalizada gravação das consultas em CSV
+2020-08-12 01:15:26,381 Iniciando leitura do arquivo de pontuação dos pesquisadores (ESPERADOS)
+2020-08-12 01:15:26,916 Finalizada gravação dos resultados esperadas
+2020-08-12 01:15:26,916 
+
+
+2020-08-12 01:47:44,635 Iniciando Processamento de Consultas
+2020-08-12 01:47:44,637 Iniciando leitura do arquivo de configuração
+2020-08-12 01:47:44,642 Iniciando leitura do arquivo XML de consultas
+2020-08-12 01:47:45,057 Finalizada gravação das consultas em CSV
+2020-08-12 01:47:45,057 Iniciando leitura do arquivo de pontuação dos pesquisadores (ESPERADOS)
+2020-08-12 01:47:45,526 Finalizada gravação dos resultados esperadas
+2020-08-12 01:47:45,526 
+
+
+2020-08-12 01:47:46,753 Iniciando Módulo de Busca
+2020-08-12 01:47:46,753 Iniciando leitura do arquivo de configuração
+2020-08-12 01:47:46,753 Iniciando leitura do modelo
+2020-08-12 01:47:46,929 Iniciando processamento do modelo
+2020-08-12 01:47:47,979 Finalizado processamento do modelo
+2020-08-12 01:47:48,215 Finalizada gravação dos resultados
+2020-08-12 01:47:48,215 
+
+
+2020-08-12 01:47:48,225 Iniciando Indexador de documentos
+2020-08-12 01:47:48,225 Iniciando leitura do arquivo de configuração
+2020-08-12 01:47:48,225 Iniciando leitura da lista invertida
+2020-08-12 01:47:48,272 Iniciado processamento do modelo
+2020-08-12 01:47:48,334 Finalizado processamento do modelo
+2020-08-12 01:47:52,545 Finalizado gravação do modelo
+2020-08-12 01:47:52,545 
+
+
+2020-08-12 01:47:52,922 Iniciando Gerador de Lista Invertida
+2020-08-12 01:47:52,923 Iniciando leitura do arquivo de configuração
+2020-08-12 01:47:52,926 Iniciando geração de lista invertida
+2020-08-12 01:48:09,584 Finalizado processamento de lista invertida
+2020-08-12 01:48:09,639 Finalizada gravação de lista invertida
+2020-08-12 01:48:09,639 
+
+
+2020-08-12 01:48:46,097 Iniciando Processamento de Consultas
+2020-08-12 01:48:46,097 Iniciando leitura do arquivo de configuração
+2020-08-12 01:48:46,101 Iniciando leitura do arquivo XML de consultas
+2020-08-12 01:48:46,556 Finalizada gravação das consultas em CSV
+2020-08-12 01:48:46,556 Iniciando leitura do arquivo de pontuação dos pesquisadores (ESPERADOS)
+2020-08-12 01:48:47,266 Finalizada gravação dos resultados esperadas
+2020-08-12 01:48:47,266 
+
+
+2020-08-12 01:48:48,364 Iniciando Módulo de Busca
+2020-08-12 01:48:48,380 Iniciando leitura do arquivo de configuração
+2020-08-12 01:48:48,380 Iniciando leitura do modelo
+2020-08-12 01:48:48,567 Iniciando processamento do modelo
+2020-08-12 01:48:49,768 Finalizado processamento do modelo
+2020-08-12 01:48:50,074 Finalizada gravação dos resultados
+2020-08-12 01:48:50,074 
+
+
+2020-08-12 01:48:50,074 Iniciando Indexador de documentos
+2020-08-12 01:48:50,074 Iniciando leitura do arquivo de configuração
+2020-08-12 01:48:50,074 Iniciando leitura da lista invertida
+2020-08-12 01:48:50,138 Iniciado processamento do modelo
+2020-08-12 01:48:50,217 Finalizado processamento do modelo
+2020-08-12 01:48:55,129 Finalizado gravação do modelo
+2020-08-12 01:48:55,129 
+
+
+2020-08-12 01:48:55,330 Iniciando Gerador de Lista Invertida
+2020-08-12 01:51:02,254 Iniciando Processamento de Consultas
+2020-08-12 01:51:02,254 Iniciando leitura do arquivo de configuração
+2020-08-12 01:51:02,258 Iniciando leitura do arquivo XML de consultas
+2020-08-12 01:51:02,646 Finalizada gravação das consultas em CSV
+2020-08-12 01:51:02,646 Iniciando leitura do arquivo de pontuação dos pesquisadores (ESPERADOS)
+2020-08-12 01:51:03,096 Finalizada gravação dos resultados esperadas
+2020-08-12 01:51:03,111 
+
+
+2020-08-12 01:51:03,976 Iniciando Módulo de Busca
+2020-08-12 01:51:03,977 Iniciando leitura do arquivo de configuração
+2020-08-12 01:51:03,977 Iniciando leitura do modelo
+2020-08-12 01:51:04,105 Iniciando processamento do modelo
+2020-08-12 01:51:05,121 Finalizado processamento do modelo
+2020-08-12 01:51:05,371 Finalizada gravação dos resultados
+2020-08-12 01:51:05,371 
+
+
+2020-08-12 01:51:05,371 Iniciando Indexador de documentos
+2020-08-12 01:51:05,371 Iniciando leitura do arquivo de configuração
+2020-08-12 01:51:05,371 Iniciando leitura da lista invertida
+2020-08-12 01:51:05,418 Iniciado processamento do modelo
+2020-08-12 01:51:05,465 Finalizado processamento do modelo
+2020-08-12 01:51:09,798 Finalizado gravação do modelo
+2020-08-12 01:51:09,798 
+
+
+2020-08-12 01:51:10,000 Iniciando Gerador de Lista Invertida
+2020-08-12 02:00:18,798 Iniciando Processamento de Consultas
+2020-08-12 02:00:18,800 Iniciando leitura do arquivo de configuração
+2020-08-12 02:00:18,804 Iniciando leitura do arquivo XML de consultas
+2020-08-12 02:00:19,171 Finalizada gravação das consultas em CSV
+2020-08-12 02:00:19,171 Iniciando leitura do arquivo de pontuação dos pesquisadores (ESPERADOS)
+2020-08-12 02:00:19,574 Finalizada gravação dos resultados esperadas
+2020-08-12 02:00:19,574 
+
+
+2020-08-12 02:00:20,396 Iniciando Módulo de Busca
+2020-08-12 02:00:20,396 Iniciando leitura do arquivo de configuração
+2020-08-12 02:00:20,396 Iniciando leitura do modelo
+2020-08-12 02:00:20,531 Iniciando processamento do modelo
+2020-08-12 02:00:21,530 Finalizado processamento do modelo
+2020-08-12 02:00:21,738 Finalizada gravação dos resultados
+2020-08-12 02:00:21,738 
+
+
+2020-08-12 02:00:21,738 Iniciando Indexador de documentos
+2020-08-12 02:00:21,738 Iniciando leitura do arquivo de configuração
+2020-08-12 02:00:21,738 Iniciando leitura da lista invertida
+2020-08-12 02:00:21,787 Iniciado processamento do modelo
+2020-08-12 02:00:21,849 Finalizado processamento do modelo
+2020-08-12 02:00:26,323 Finalizado gravação do modelo
+2020-08-12 02:00:26,323 
+
+
+2020-08-12 02:00:26,660 Iniciando Gerador de Lista Invertida
+2020-08-12 02:01:26,026 Iniciando Processamento de Consultas
+2020-08-12 02:01:26,028 Iniciando leitura do arquivo de configuração
+2020-08-12 02:01:26,030 Iniciando leitura do arquivo XML de consultas
+2020-08-12 02:01:26,374 Finalizada gravação das consultas em CSV
+2020-08-12 02:01:26,374 Iniciando leitura do arquivo de pontuação dos pesquisadores (ESPERADOS)
+2020-08-12 02:01:26,766 Finalizada gravação dos resultados esperadas
+2020-08-12 02:01:26,766 
+
+
+2020-08-12 02:01:27,591 Iniciando Módulo de Busca
+2020-08-12 02:01:27,591 Iniciando leitura do arquivo de configuração
+2020-08-12 02:01:27,591 Iniciando leitura do modelo
+2020-08-12 02:01:27,733 Iniciando processamento do modelo
+2020-08-12 02:01:28,800 Finalizado processamento do modelo
+2020-08-12 02:01:29,034 Finalizada gravação dos resultados
+2020-08-12 02:01:29,034 
+
+
+2020-08-12 02:01:29,034 Iniciando Indexador de documentos
+2020-08-12 02:01:29,034 Iniciando leitura do arquivo de configuração
+2020-08-12 02:01:29,034 Iniciando leitura da lista invertida
+2020-08-12 02:01:29,081 Iniciado processamento do modelo
+2020-08-12 02:01:29,151 Finalizado processamento do modelo
+2020-08-12 02:02:23,042 Iniciando Processamento de Consultas
+2020-08-12 02:02:23,043 Iniciando leitura do arquivo de configuração
+2020-08-12 02:02:23,045 Iniciando leitura do arquivo XML de consultas
+2020-08-12 02:02:23,443 Finalizada gravação das consultas em CSV
+2020-08-12 02:02:23,443 Iniciando leitura do arquivo de pontuação dos pesquisadores (ESPERADOS)
+2020-08-12 02:02:23,907 Finalizada gravação dos resultados esperadas
+2020-08-12 02:02:23,907 
+
+
+2020-08-12 02:02:24,746 Iniciando Módulo de Busca
+2020-08-12 02:02:24,746 Iniciando leitura do arquivo de configuração
+2020-08-12 02:02:24,746 Iniciando leitura do modelo
+2020-08-12 02:02:51,666 Iniciando Processamento de Consultas
+2020-08-12 02:02:51,667 Iniciando leitura do arquivo de configuração
+2020-08-12 02:02:51,669 Iniciando leitura do arquivo XML de consultas
+2020-08-12 02:02:52,026 Finalizada gravação das consultas em CSV
+2020-08-12 02:02:52,026 Iniciando leitura do arquivo de pontuação dos pesquisadores (ESPERADOS)
+2020-08-12 02:02:52,438 Finalizada gravação dos resultados esperadas
+2020-08-12 02:02:52,438 
+
+
+2020-08-12 02:02:53,220 Iniciando Módulo de Busca
+2020-08-12 02:02:53,236 Iniciando leitura do arquivo de configuração
+2020-08-12 02:02:53,236 Iniciando leitura do modelo
+2020-08-12 02:04:02,471 Iniciando Processamento de Consultas
+2020-08-12 02:04:02,473 Iniciando leitura do arquivo de configuração
+2020-08-12 02:04:02,475 Iniciando leitura do arquivo XML de consultas
+2020-08-12 02:04:02,829 Finalizada gravação das consultas em CSV
+2020-08-12 02:04:02,829 Iniciando leitura do arquivo de pontuação dos pesquisadores (ESPERADOS)
+2020-08-12 02:04:03,217 Finalizada gravação dos resultados esperadas
+2020-08-12 02:04:03,217 
+
+
+2020-08-12 02:04:04,079 Iniciando Módulo de Busca
+2020-08-12 02:04:04,084 Iniciando leitura do arquivo de configuração
+2020-08-12 02:04:04,085 Iniciando leitura do modelo
+2020-08-12 02:04:40,731 Iniciando Processamento de Consultas
+2020-08-12 02:04:40,733 Iniciando leitura do arquivo de configuração
+2020-08-12 02:04:40,735 Iniciando leitura do arquivo XML de consultas
+2020-08-12 02:04:41,115 Finalizada gravação das consultas em CSV
+2020-08-12 02:04:41,115 Iniciando leitura do arquivo de pontuação dos pesquisadores (ESPERADOS)
+2020-08-12 02:04:41,541 Finalizada gravação dos resultados esperadas
+2020-08-12 02:04:41,541 
+
+
+2020-08-12 02:04:42,535 Iniciando Gerador de Lista Invertida
+2020-08-12 02:04:42,536 Iniciando leitura do arquivo de configuração
+2020-08-12 02:04:42,543 Iniciando geração de lista invertida
+2020-08-12 02:04:58,218 Finalizado processamento de lista invertida
+2020-08-12 02:04:58,264 Finalizada gravação de lista invertida
+2020-08-12 02:04:58,264 
+
+
+2020-08-12 02:04:58,264 Iniciando Indexador de documentos
+2020-08-12 02:04:58,264 Iniciando leitura do arquivo de configuração
+2020-08-12 02:04:58,264 Iniciando leitura da lista invertida
+2020-08-12 02:04:58,311 Iniciado processamento do modelo
+2020-08-12 02:04:58,378 Finalizado processamento do modelo
+2020-08-12 02:05:02,546 Finalizado gravação do modelo
+2020-08-12 02:05:02,546 
+
+
+2020-08-12 02:05:02,546 Iniciando Módulo de Busca
+2020-08-12 02:05:02,546 Iniciando leitura do arquivo de configuração
+2020-08-12 02:05:02,546 Iniciando leitura do modelo
+2020-08-12 02:05:02,691 Iniciando processamento do modelo
+2020-08-12 02:05:03,697 Finalizado processamento do modelo
+2020-08-12 02:05:03,966 Finalizada gravação dos resultados
+2020-08-12 02:05:03,966 
+
+
+2020-08-12 02:06:32,294 Iniciando Processamento de Consultas
+2020-08-12 02:06:32,296 Iniciando leitura do arquivo de configuração
+2020-08-12 02:06:32,298 Iniciando leitura do arquivo XML de consultas
+2020-08-12 02:06:32,676 Finalizada gravação das consultas em CSV
+2020-08-12 02:06:32,676 Iniciando leitura do arquivo de pontuação dos pesquisadores (ESPERADOS)
+2020-08-12 02:06:33,124 Finalizada gravação dos resultados esperadas
+2020-08-12 02:06:33,124 
+
+
+2020-08-12 02:06:34,180 Iniciando Gerador de Lista Invertida
+2020-08-12 02:06:34,180 Iniciando leitura do arquivo de configuração
+2020-08-12 02:06:34,188 Iniciando geração de lista invertida
+2020-08-12 02:06:50,392 Finalizado processamento de lista invertida
+2020-08-12 02:06:50,443 Finalizada gravação de lista invertida
+2020-08-12 02:06:50,444 
+
+
+2020-08-12 02:06:50,445 Iniciando Indexador de documentos
+2020-08-12 02:06:50,445 Iniciando leitura do arquivo de configuração
+2020-08-12 02:06:50,446 Iniciando leitura da lista invertida
+2020-08-12 02:06:50,489 Iniciado processamento do modelo
+2020-08-12 02:06:50,536 Finalizado processamento do modelo
+2020-08-12 02:06:54,864 Finalizado gravação do modelo
+2020-08-12 02:06:54,864 
+
+
+2020-08-12 02:06:54,864 Iniciando Módulo de Busca
+2020-08-12 02:06:54,864 Iniciando leitura do arquivo de configuração
+2020-08-12 02:06:54,864 Iniciando leitura do modelo
+2020-08-12 02:06:55,007 Iniciando processamento do modelo
+2020-08-12 02:07:12,920 Iniciando Processamento de Consultas
+2020-08-12 02:07:12,921 Iniciando leitura do arquivo de configuração
+2020-08-12 02:07:12,923 Iniciando leitura do arquivo XML de consultas
+2020-08-12 02:07:13,270 Finalizada gravação das consultas em CSV
+2020-08-12 02:07:13,270 Iniciando leitura do arquivo de pontuação dos pesquisadores (ESPERADOS)
+2020-08-12 02:07:13,674 Finalizada gravação dos resultados esperadas
+2020-08-12 02:07:13,674 
+
+
+2020-08-12 02:07:14,703 Iniciando Gerador de Lista Invertida
+2020-08-12 02:07:14,704 Iniciando leitura do arquivo de configuração
+2020-08-12 02:07:14,712 Iniciando geração de lista invertida
+2020-08-12 02:09:56,129 Iniciando Processamento de Consultas
+2020-08-12 02:09:56,130 Iniciando leitura do arquivo de configuração
+2020-08-12 02:09:56,134 Iniciando leitura do arquivo XML de consultas
+2020-08-12 02:09:56,516 Finalizada gravação das consultas em CSV
+2020-08-12 02:09:56,516 Iniciando leitura do arquivo de pontuação dos pesquisadores (ESPERADOS)
+2020-08-12 02:09:56,917 Finalizada gravação dos resultados esperadas
+2020-08-12 02:09:56,918 
+
+
+2020-08-12 02:10:00,989 Iniciando Processamento de Consultas
+2020-08-12 02:10:00,989 Iniciando leitura do arquivo de configuração
+2020-08-12 02:10:00,992 Iniciando leitura do arquivo XML de consultas
+2020-08-12 02:10:01,079 Finalizada gravação das consultas em CSV
+2020-08-12 02:10:01,079 Iniciando leitura do arquivo de pontuação dos pesquisadores (ESPERADOS)
+2020-08-12 02:10:01,200 Finalizada gravação dos resultados esperadas
+2020-08-12 02:10:01,200 
+
+
+2020-08-12 02:10:08,031 Iniciando Processamento de Consultas
+2020-08-12 02:10:08,031 Iniciando leitura do arquivo de configuração
+2020-08-12 02:10:08,049 Iniciando leitura do arquivo XML de consultas
+2020-08-12 02:10:08,141 Finalizada gravação das consultas em CSV
+2020-08-12 02:10:08,141 Iniciando leitura do arquivo de pontuação dos pesquisadores (ESPERADOS)
+2020-08-12 02:10:08,281 Finalizada gravação dos resultados esperadas
+2020-08-12 02:10:08,281 
+
+
+2020-08-12 02:10:08,917 Iniciando Gerador de Lista Invertida
+2020-08-12 02:10:08,917 Iniciando leitura do arquivo de configuração
+2020-08-12 02:10:08,921 Iniciando geração de lista invertida
+2020-08-12 02:10:12,044 Finalizado processamento de lista invertida
+2020-08-12 02:10:12,075 Finalizada gravação de lista invertida
+2020-08-12 02:10:12,075 
+
+
+2020-08-12 02:10:12,075 Iniciando Indexador de documentos
+2020-08-12 02:10:12,075 Iniciando leitura do arquivo de configuração
+2020-08-12 02:10:12,075 Iniciando leitura da lista invertida
+2020-08-12 02:10:12,130 Iniciado processamento do modelo
+2020-08-12 02:10:12,157 Finalizado processamento do modelo
+2020-08-12 02:10:12,407 Finalizado gravação do modelo
+2020-08-12 02:10:12,407 
+
+
+2020-08-12 02:10:12,407 Iniciando Módulo de Busca
+2020-08-12 02:10:12,407 Iniciando leitura do arquivo de configuração
+2020-08-12 02:10:12,407 Iniciando leitura do modelo
+2020-08-12 02:10:12,523 Iniciando processamento do modelo
+2020-08-12 02:10:13,034 Finalizado processamento do modelo
+2020-08-12 02:10:13,081 Finalizada gravação dos resultados
+2020-08-12 02:10:13,081 
+
+
+2020-08-12 02:22:12,524 Iniciando Gerador de Lista Invertida
+2020-08-12 02:22:12,525 Iniciando leitura do arquivo de configuração
+2020-08-12 02:22:12,538 Iniciando geração de lista invertida
+2020-08-12 02:23:14,234 Iniciando Gerador de Lista Invertida
+2020-08-12 02:23:14,235 Iniciando leitura do arquivo de configuração
+2020-08-12 02:23:14,243 Iniciando geração de lista invertida
+2020-08-12 02:23:48,473 Iniciando Gerador de Lista Invertida
+2020-08-12 02:23:48,474 Iniciando leitura do arquivo de configuração
+2020-08-12 02:24:53,029 Iniciando Gerador de Lista Invertida
+2020-08-12 02:24:53,029 Iniciando leitura do arquivo de configuração
+2020-08-12 02:24:53,040 Iniciando geração de lista invertida
+2020-08-12 02:26:59,317 Iniciando Gerador de Lista Invertida
+2020-08-12 02:26:59,318 Iniciando leitura do arquivo de configuração
+2020-08-12 02:26:59,322 Iniciando geração de lista invertida
+2020-08-12 02:28:11,330 Iniciando Gerador de Lista Invertida
+2020-08-12 02:28:11,331 Iniciando leitura do arquivo de configuração
+2020-08-12 02:28:11,334 Iniciando geração de lista invertida
+2020-08-12 02:30:18,580 Iniciando Gerador de Lista Invertida
+2020-08-12 02:30:18,581 Iniciando leitura do arquivo de configuração
+2020-08-12 02:30:18,590 Iniciando geração de lista invertida
+2020-08-12 02:31:01,292 Iniciando Gerador de Lista Invertida
+2020-08-12 02:31:01,293 Iniciando leitura do arquivo de configuração
+2020-08-12 02:31:01,296 Iniciando geração de lista invertida
+2020-08-12 02:32:37,363 Iniciando Gerador de Lista Invertida
+2020-08-12 02:32:37,364 Iniciando leitura do arquivo de configuração
+2020-08-12 02:32:37,374 Iniciando geração de lista invertida
+2020-08-12 02:33:00,011 Finalizado processamento de lista invertida
+2020-08-12 02:33:00,066 Finalizada gravação de lista invertida
+2020-08-12 02:33:00,066 
+
+
+2020-08-12 02:46:24,985 Iniciando Gerador de Lista Invertida
+2020-08-12 02:46:24,986 Iniciando leitura do arquivo de configuração
+2020-08-12 02:46:24,995 Iniciando geração de lista invertida
+2020-08-12 02:46:46,483 Finalizado processamento de lista invertida
+2020-08-12 02:46:46,541 Finalizada gravação de lista invertida
+2020-08-12 02:46:46,542 
+
+
+2020-08-12 02:48:02,194 Iniciando Gerador de Lista Invertida
+2020-08-12 02:48:02,195 Iniciando leitura do arquivo de configuração
+2020-08-12 02:48:02,198 Iniciando geração de lista invertida
+2020-08-12 02:48:06,619 Finalizado processamento de lista invertida
+2020-08-12 02:48:06,651 Finalizada gravação de lista invertida
+2020-08-12 02:48:06,651 
+
+
+2020-08-12 02:48:31,553 Iniciando Gerador de Lista Invertida
+2020-08-12 02:48:31,553 Iniciando leitura do arquivo de configuração
+2020-08-12 02:48:31,563 Iniciando geração de lista invertida
+2020-08-12 02:48:35,958 Finalizado processamento de lista invertida
+2020-08-12 02:48:35,991 Finalizada gravação de lista invertida
+2020-08-12 02:48:35,991 
+
+
+2020-08-12 02:53:56,354 Iniciando Gerador de Lista Invertida
+2020-08-12 02:53:56,354 Iniciando leitura do arquivo de configuração
+2020-08-12 02:53:56,358 Iniciando geração de lista invertida
+2020-08-12 02:54:08,499 Iniciando Gerador de Lista Invertida
+2020-08-12 02:54:08,499 Iniciando leitura do arquivo de configuração
+2020-08-12 02:54:08,503 Iniciando geração de lista invertida
+2020-08-12 02:54:14,082 Finalizado processamento de lista invertida
+2020-08-12 02:54:14,110 Finalizada gravação de lista invertida
+2020-08-12 02:54:14,110 
+
+
+2020-08-12 02:54:41,116 Iniciando Gerador de Lista Invertida
+2020-08-12 02:54:41,116 Iniciando leitura do arquivo de configuração
+2020-08-12 02:54:41,120 Iniciando geração de lista invertida
+2020-08-12 02:54:46,576 Finalizado processamento de lista invertida
+2020-08-12 02:54:46,603 Finalizada gravação de lista invertida
+2020-08-12 02:54:46,603 
+
+
+2020-08-12 02:56:18,602 Iniciando Indexador de documentos
+2020-08-12 02:56:18,602 Iniciando leitura do arquivo de configuração
+2020-08-12 02:56:18,602 Iniciando leitura da lista invertida
+2020-08-12 02:56:18,648 Iniciado processamento do modelo
+2020-08-12 02:56:18,686 Finalizado processamento do modelo
+2020-08-12 02:56:18,946 Finalizado gravação do modelo
+2020-08-12 02:56:18,946 
+
+
+2020-08-12 03:00:07,812 Iniciando Módulo de Busca
+2020-08-12 03:00:07,815 Iniciando leitura do arquivo de configuração
+2020-08-12 03:00:07,815 Iniciando leitura do modelo
+2020-08-12 03:00:07,960 Iniciando processamento do modelo
+2020-08-12 03:01:06,240 Iniciando Módulo de Busca
+2020-08-12 03:01:06,243 Iniciando leitura do arquivo de configuração
+2020-08-12 03:01:06,244 Iniciando leitura do modelo
+2020-08-12 03:01:06,393 Iniciando processamento do modelo
+2020-08-12 03:02:15,842 Iniciando Módulo de Busca
+2020-08-12 03:02:15,849 Iniciando leitura do arquivo de configuração
+2020-08-12 03:02:15,851 Iniciando leitura do modelo
+2020-08-12 03:02:15,987 Iniciando processamento do modelo
+2020-08-12 03:02:58,024 Iniciando Módulo de Busca
+2020-08-12 03:02:58,031 Iniciando leitura do arquivo de configuração
+2020-08-12 03:02:58,033 Iniciando leitura do modelo
+2020-08-12 03:02:58,184 Iniciando processamento do modelo
+2020-08-12 03:03:44,249 Finalizado processamento do modelo
+2020-08-12 03:03:44,500 Finalizada gravação dos resultados
+2020-08-12 03:03:44,500 
+
+

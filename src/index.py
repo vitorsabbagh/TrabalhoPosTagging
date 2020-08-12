@@ -59,6 +59,7 @@ with open(config['index']['ESCREVA'], 'w') as file:
 
 logging.info('Finalizado gravação do modelo')
 
+logging.info('\n\n')
 # for term,doclist in lista_invertida.iteritems(): # the basic way
 #     temp = ""
 #     temp+=term

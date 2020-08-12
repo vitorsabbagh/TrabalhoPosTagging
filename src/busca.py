@@ -3,15 +3,14 @@ import logging
 import unidecode
 from nltk.tokenize import RegexpTokenizer
 from nltk.corpus import stopwords
-import pprint
+# import pprint
 import csv
 import json
-from sys import exit
 import math
 import nltk
-from nltk import FreqDist
+# from nltk import FreqDist
+# nltk.download('punkt')
 from configparser import ConfigParser
-nltk.download('punkt')
 
 
 logging.basicConfig(filename='buscador.log',
@@ -26,6 +25,10 @@ config = ConfigParser()
 logging.info('Iniciando leitura do arquivo de configuração')
 config.read('./cfg/busca.cfg')
 
+import PorterStemmer
+ps = PorterStemmer.PorterStemmer()
+config.read('./cfg/general.cfg')
+STEMMER = bool(config['general']['STEMMER'])
 
 W_Di = {}
 IDFi = {}
@@ -75,7 +78,9 @@ with open(config['busca']['CONSULTAS'], newline='') as csvfile:
         produto_escalar_Q_Di[query_number] = {}
         distancia_Qi[query_number] = {}
         aux_distancia_Q = 0
-        for query_term in query_terms:
+        for query_term in query_terms:            
+            if STEMMER:
+                query_term = ps.stem(query_term.lower(), 0, len(query_term)-1).upper()
             if query_term in IDFi:
                 W_Qi[query_number][query_term] = IDFi[query_term]*1
                 # for doc_number in Docs:
@@ -89,6 +94,8 @@ with open(config['busca']['CONSULTAS'], newline='') as csvfile:
         for doc_number in Docs:
             aux_produto_escalar = 0
             for query_term in query_terms:
+                if STEMMER:
+                    query_term = ps.stem(query_term.lower(), 0, len(query_term)-1).upper()
                 if query_term in W_Di:
                     if str(doc_number) in W_Di[query_term]:
                         aux_produto_escalar += W_Qi[query_number][query_term] * \
@@ -115,7 +122,7 @@ with open(config['busca']['RESULTADOS'], 'w') as fp:
 
 
 logging.info('Finalizada gravação dos resultados')
-
+logging.info('\n\n')
 
 # docs = [0]*3  # Vetor de Documentos
 # docs[0] = "Shipment of gold damaged in a fire"
