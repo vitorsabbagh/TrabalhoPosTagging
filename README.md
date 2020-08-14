@@ -50,3 +50,5 @@
  - 100; [  2,  1017, 0.38]
  - 100; [  3,   183, 0.37]
 
+
+[11pontos-nostemmer-1.pdf]("https://github.com/vitorsabbagh/TrabalhoRecuperacaoVetorial/tree/master/avalia/11pontos-nostemmer-1.pdf").
