@@ -11,6 +11,7 @@ import nltk
 # from nltk import FreqDist
 # nltk.download('punkt')
 from configparser import ConfigParser
+import PorterStemmer
 
 
 logging.basicConfig(filename='buscador.log',
@@ -25,10 +26,9 @@ config = ConfigParser()
 logging.info('Iniciando leitura do arquivo de configuração')
 config.read('./cfg/busca.cfg')
 
-import PorterStemmer
 ps = PorterStemmer.PorterStemmer()
 config.read('./cfg/general.cfg')
-STEMMER = bool(config['general']['STEMMER'])
+STEMMER = eval(config['general']['STEMMER'])
 
 W_Di = {}
 IDFi = {}
@@ -78,11 +78,12 @@ with open(config['busca']['CONSULTAS'], newline='') as csvfile:
         produto_escalar_Q_Di[query_number] = {}
         distancia_Qi[query_number] = {}
         aux_distancia_Q = 0
-        for query_term in query_terms:            
+        for query_term in query_terms:
             if STEMMER:
-                query_term = ps.stem(query_term.lower(), 0, len(query_term)-1).upper()
+                query_term = ps.stem(query_term.lower(), 0,
+                                     len(query_term) - 1).upper()
             if query_term in IDFi:
-                W_Qi[query_number][query_term] = IDFi[query_term]*1
+                W_Qi[query_number][query_term] = IDFi[query_term] * 1
                 # for doc_number in Docs:
                 # for doc_number in W_Di[query_term]:
                 #     aux_produto_escalar += W_Qi[query_number][query_term] * \
@@ -95,7 +96,8 @@ with open(config['busca']['CONSULTAS'], newline='') as csvfile:
             aux_produto_escalar = 0
             for query_term in query_terms:
                 if STEMMER:
-                    query_term = ps.stem(query_term.lower(), 0, len(query_term)-1).upper()
+                    query_term = ps.stem(
+                        query_term.lower(), 0, len(query_term) - 1).upper()
                 if query_term in W_Di:
                     if str(doc_number) in W_Di[query_term]:
                         aux_produto_escalar += W_Qi[query_number][query_term] * \
@@ -103,13 +105,15 @@ with open(config['busca']['CONSULTAS'], newline='') as csvfile:
             produto_escalar_Q_Di[query_number][doc_number] = aux_produto_escalar
             if distancia_Di[doc_number] > 0:
                 Coseno_Qi_Di[query_number][doc_number] = produto_escalar_Q_Di[query_number][doc_number] / \
-                    distancia_Qi[query_number]/distancia_Di[doc_number]
+                    distancia_Qi[query_number] / distancia_Di[doc_number]
 
 logging.info('Finalizado processamento do modelo')
 # pprint.pprint(Coseno_Qi_Di)
 
 position = 0
-with open(config['busca']['RESULTADOS'], 'w') as fp:
+filename = './result/resultados-' + \
+    ('stemmer' if STEMMER else 'nostemmer') + '-1.csv'
+with open(filename, 'w') as fp:
     for query_number, ranking in Coseno_Qi_Di.items():
         sorted_ranking = sorted(
             Coseno_Qi_Di[query_number].items(), key=lambda x: x[1], reverse=True)

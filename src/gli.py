@@ -1,5 +1,5 @@
 
-import PorterStemmer    
+import PorterStemmer
 import logging
 # import pprint
 from sys import exit
@@ -56,9 +56,9 @@ stop_words = set(stopwords.words('english'))
 
 ps = PorterStemmer.PorterStemmer()
 config.read('./cfg/general.cfg')
-STEMMER = bool(config['general']['STEMMER'])
+STEMMER = eval(config['general']['STEMMER'])
 # if STEMMER:
-#     import PorterStemmer    
+#     import PorterStemmer
 #     ps = PorterStemmer()
 #     for stop_word in stop_words
 #         stop_word = ps.stem(stop_word, 0, len(stop_word)-1)
@@ -97,20 +97,21 @@ for docXML in docsXML:
             # if STEMMER:
             #     for new_token in new_tokens:
             #         new_token = ps.stem(new_token.lower(), 0, len(new_token)-1)
-                    # p(new_token, end=' -> ')
-                    # p(ps.stem(new_token.lower(), 0, len(new_token)-1))
+            # p(new_token, end=' -> ')
+            # p(ps.stem(new_token.lower(), 0, len(new_token)-1))
 
             # tokens += tokenizer.tokenize(shave(auxAbstract))
             # lista_invertida = {'John': 425, 'Liz': 212, 'Isaac': 345}
             for new_token in new_tokens:
-                # if new_token in lista_invertida:                
+                # if new_token in lista_invertida:
                 if STEMMER:
-                    new_token = ps.stem(new_token.lower(), 0, len(new_token)-1).upper()
+                    new_token = ps.stem(new_token.lower(),
+                                        0, len(new_token) - 1).upper()
                 if new_token in lista_invertida:
                     lista_invertida[new_token].append(auxDocNumber)
                 else:
                     lista_invertida[new_token] = [auxDocNumber]
-
+# p(lista_invertida)
 logging.info('Finalizado processamento de lista invertida')
 
 with open(config['gli']['ESCREVA'], 'w') as fp:
