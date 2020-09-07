@@ -2,10 +2,6 @@
 
 **Base de Documentos**
  1. corpus100.txt 
- 2. cf76.xml
- 3. cf77.xml
- 4. cf78.xml
- 5. cf79.xml
 
 **Módulos**
  1. Separação (teste / treino) e Aprendizado
