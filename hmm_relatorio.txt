@@ -1,0 +1,198 @@
+Taxa de acerto geral: 82.93% 
+
+Taxa de acerto da classe ADJ
+ADJ: 69.01% 
+Total da classe: 69.01%
+
+Taxa de acerto da classe ADV
+ADV: 88.74% 
+Total da classe: 88.74%
+
+Taxa de acerto da classe ADV+PPOA
+ADV+PPOA: 0.00% 
+Total da classe: 0.00%
+
+Taxa de acerto da classe ART
+ART: 93.88% 
+Total da classe: 93.88%
+
+Taxa de acerto da classe CONJCOORD
+CONJCOORD: 94.51% 
+Total da classe: 94.51%
+
+Taxa de acerto da classe CONJSUB
+CONJSUB: 72.34% 
+Total da classe: 72.34%
+
+Taxa de acerto da classe I
+I: 66.67% 
+Total da classe: 66.67%
+
+Taxa de acerto da classe INT
+INT: 0.00% 
+Total da classe: 0.00%
+
+Taxa de acerto da classe LADV
+LADV: 43.90% 
+Total da classe: 43.90%
+
+Taxa de acerto da classe LCONJ
+LCONJ: 29.09% 
+Total da classe: 29.09%
+
+Taxa de acerto da classe LDEN
+LDEN: 80.00% 
+Total da classe: 80.00%
+
+Taxa de acerto da classe LP
+LP: 0.00% 
+Total da classe: 0.00%
+
+Taxa de acerto da classe LPREP
+LPREP: 30.12% 
+Total da classe: 30.12%
+
+Taxa de acerto da classe N
+N: 94.23% 
+Total da classe: 94.23%
+
+Taxa de acerto da classe NC
+NC: 91.78% 
+Total da classe: 91.78%
+
+Taxa de acerto da classe NO
+NO: 40.00% 
+Total da classe: 40.00%
+
+Taxa de acerto da classe NP
+NP: 65.00% 
+Total da classe: 65.00%
+
+Taxa de acerto da classe ORD
+ORD: 80.00% 
+Total da classe: 80.00%
+
+Taxa de acerto da classe PAPASS
+PAPASS: 0.00% 
+Total da classe: 0.00%
+
+Taxa de acerto da classe PD
+PD: 94.55% 
+Total da classe: 94.55%
+
+Taxa de acerto da classe PDEN
+PDEN: 0.00% 
+Total da classe: 0.00%
+
+Taxa de acerto da classe PIND
+PIND: 55.88% 
+Total da classe: 55.88%
+
+Taxa de acerto da classe PINT
+PINT: 20.00% 
+Total da classe: 20.00%
+
+Taxa de acerto da classe PPOA
+PPOA: 55.71% 
+Total da classe: 55.71%
+
+Taxa de acerto da classe PPOT
+PPOT: 0.00% 
+Total da classe: 0.00%
+
+Taxa de acerto da classe PPR
+PPR: 86.89% 
+Total da classe: 86.89%
+
+Taxa de acerto da classe PPS
+PPS: 91.67% 
+Total da classe: 91.67%
+
+Taxa de acerto da classe PR
+PR: 83.10% 
+Total da classe: 83.10%
+
+Taxa de acerto da classe PREAL
+PREAL: 0.00% 
+Total da classe: 0.00%
+
+Taxa de acerto da classe PREP
+PREP: 93.34% 
+Total da classe: 93.34%
+
+Taxa de acerto da classe PREP+ADV
+PREP+ADV: 50.00% 
+Total da classe: 50.00%
+
+Taxa de acerto da classe PREP+ART
+PREP+ART: 94.78% 
+Total da classe: 94.78%
+
+Taxa de acerto da classe PREP+PD
+PREP+PD: 90.91% 
+Total da classe: 90.91%
+
+Taxa de acerto da classe PREP+PPR
+PREP+PPR: 87.50% 
+Total da classe: 87.50%
+
+Taxa de acerto da classe PTRA
+PTRA: 100.00% 
+Total da classe: 100.00%
+
+Taxa de acerto da classe RES
+RES: 64.29% 
+Total da classe: 64.29%
+
+Taxa de acerto da classe VAUX
+VAUX: 51.06% 
+Total da classe: 51.06%
+
+Taxa de acerto da classe VAUX!PPOA
+VAUX!PPOA: 0.00% 
+Total da classe: 0.00%
+
+Taxa de acerto da classe VAUX+PPOA
+VAUX+PPOA: 100.00% 
+Total da classe: 100.00%
+
+Taxa de acerto da classe VBI
+VBI: 16.67% 
+Total da classe: 16.67%
+
+Taxa de acerto da classe VBI+PPOA
+VBI+PPOA: 11.11% 
+Total da classe: 11.11%
+
+Taxa de acerto da classe VINT
+VINT: 40.24% 
+Total da classe: 40.24%
+
+Taxa de acerto da classe VLIG
+VLIG: 91.61% 
+Total da classe: 91.61%
+
+Taxa de acerto da classe VLIG+PPOA
+VLIG+PPOA: 33.33% 
+Total da classe: 33.33%
+
+Taxa de acerto da classe VTD
+VTD: 53.30% 
+Total da classe: 53.30%
+
+Taxa de acerto da classe VTD+PAPASS
+VTD+PAPASS: 16.67% 
+Total da classe: 16.67%
+
+Taxa de acerto da classe VTD+PPOA
+VTD+PPOA: 10.87% 
+Total da classe: 10.87%
+
+Taxa de acerto da classe VTI
+VTI: 38.10% 
+Total da classe: 38.10%
+
+Taxa de acerto da classe VTI+PPOA
+VTI+PPOA: 0.00% 
+Total da classe: 0.00%
+

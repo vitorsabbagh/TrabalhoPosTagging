@@ -123,9 +123,9 @@ class Decoder(object):
         # initialization
         trellis[:, 0] = np.squeeze(self.initialProb * self.Obs(obs[0]))
 
-        p('***trellis***')
-        p(trellis)
-        p()
+        # p('***trellis*** 0')
+        # p(trellis)
+        # p()
 
         # steps
         for t in range(1, len(obs)):
@@ -134,24 +134,24 @@ class Decoder(object):
             backpt[:, t] = (np.tile(trellis[:, t - 1, None], [1, self.N]) *
                             self.transProb).argmax(0)
 
-            p('***trellis*** ' + str(t))
-            p(trellis)
-            p()
+            # p('***trellis*** ' + str(t))
+            # p(trellis)
+            # p()
 
-            p('***backpt*** ' + str(t))
-            p(backpt)
-            p()
+            # p('***backpt*** ' + str(t))
+            # p(backpt)
+            # p()
 
         # termination
         tokens = [trellis[:, -1].argmax()]
 
-        p('***trellis*** -1')
-        p(trellis[:, -1])
-        p()
+        # p('***trellis*** -1')
+        # p(trellis[:, -1])
+        # p()
 
-        p('***tokens*** ')
-        p(tokens)
-        p()
+        # p('***tokens*** ')
+        # p(tokens)
+        # p()
 
         for i in range(len(obs) - 1, 0, -1):
             tokens.append(backpt[tokens[-1], i])
@@ -160,8 +160,8 @@ class Decoder(object):
 
 
 # initialize
-d = Decoder(pinp, Anp, Bnp)
+# d = Decoder(pinp, Anp, Bnp)
 
-# solve for sentence and print
-x = d.Decode(data)
-print(x)
+# # solve for sentence and print
+# x = d.Decode(data)
+# print(x)

@@ -1,0 +1,87 @@
+{
+    "accuracy": {
+        "LPREP": {
+            "total": 2,
+            "correct": 2,
+            "acc": 100.0
+        },
+        "VTD": {
+            "total": 2,
+            "correct": 1,
+            "acc": 50.0
+        },
+        "ART": {
+            "total": 3,
+            "correct": 3,
+            "acc": 100.0
+        },
+        "N": {
+            "total": 15,
+            "correct": 9,
+            "acc": 60.0
+        },
+        "PREP+ART": {
+            "total": 3,
+            "correct": 3,
+            "acc": 100.0
+        },
+        ",": {
+            "total": 7,
+            "correct": 2,
+            "acc": 28.57142857142857
+        },
+        "VLIG": {
+            "total": 2,
+            "correct": 2,
+            "acc": 100.0
+        },
+        "ADJ": {
+            "total": 7,
+            "correct": 5,
+            "acc": 71.42857142857143
+        },
+        "PR": {
+            "total": 1,
+            "correct": 1,
+            "acc": 100.0
+        },
+        "VBI": {
+            "total": 1,
+            "acc": 0
+        },
+        ".": {
+            "total": 2,
+            "correct": 1,
+            "acc": 50.0
+        },
+        "PREP+PREP": {
+            "total": 1,
+            "correct": 1,
+            "acc": 100.0
+        },
+        "PD": {
+            "total": 1,
+            "correct": 1,
+            "acc": 100.0
+        },
+        "ADV": {
+            "total": 1,
+            "correct": 1,
+            "acc": 100.0
+        },
+        ":": {
+            "total": 1,
+            "correct": 1,
+            "acc": 100.0
+        },
+        "PREP": {
+            "total": 1,
+            "correct": 1,
+            "acc": 100.0
+        },
+        "CONJCOORD": {
+            "total": 1,
+            "acc": 0
+        }
+    }
+}
