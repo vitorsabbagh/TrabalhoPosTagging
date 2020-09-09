@@ -1,2 +1,3 @@
-Os_ART ácidos_N são_VLIG moléculas_N ._.
+Essa_PD utilização_N só_ADV é_VLIG possível_ADJ através_LPREP de_LPREP um_ART mecanismo_N conhecido_ADJ como_CONJSUB acoplamento_N de_PREP reações_N ,_, em_PREP que_PR um_ART reagente_N comum_ADJ entre_PREP as_ART reações_N "_" dirige_VTD "_" esse_PD aproveitamento_N de_PREP energia_N ,_, havendo_VTD ,_, neste_LADV caso_LADV ,_, pouca_ADJ liberação_N de_PREP energia_N sob_PREP forma_N de_PREP calor_N ._.
+Os_ART ácidos_N são_VLIG ssssssss_N sssssssas_VLIG ssssssssss_N ._.
 Os_ART ácidos_N são_VLIG moléculas_N ._.

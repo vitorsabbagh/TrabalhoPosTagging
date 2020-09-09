@@ -93,11 +93,12 @@ class Decoder(object):
         Emission matrix ($P(w_i|t_i)$ in POST)
     '''
 
-    def __init__(self, initialProb, transProb, obsProb):
+    def __init__(self, initialProb, transProb, obsProb, obsSufixProb):
         self.N = initialProb.shape[0]
         self.initialProb = initialProb
         self.transProb = transProb
         self.obsProb = obsProb
+        self.obsSufixProb = obsSufixProb
         assert self.initialProb.shape == (self.N, 1)
         assert self.transProb.shape == (self.N, self.N)
         assert self.obsProb.shape[0] == self.N  # no control over 2nd dimension
@@ -105,7 +106,10 @@ class Decoder(object):
     def Obs(self, obs):
         return self.obsProb[:, obs, None]
 
-    def Decode(self, obs):
+    def ObsSufix(self, obs):
+        return self.obsSufixProb[:, obs, None]
+
+    def Decode(self, obs, obs_words, obs_sufix):
         '''
         This is the Viterbi algorithm
         Parameters
@@ -123,24 +127,66 @@ class Decoder(object):
         # initialization
         trellis[:, 0] = np.squeeze(self.initialProb * self.Obs(obs[0]))
 
-        # p('***trellis*** 0')
-        # p(trellis)
-        # p()
-
+        t = 0
         # steps
         for t in range(1, len(obs)):
-            trellis[:, t] = (trellis[:, t - 1, None].dot(self.Obs(obs[t]).T) *
-                             self.transProb).max(0)
+            # p('\n***trellis*** ' + str(t))
+            # p(trellis)
+
+            # p('\n***trellis[:, t - 1, None]*** ')
+            # p(trellis[:, t - 1, None])
+            # p('\n***self.ObsSufix(obs_sufix[t]).T)*** ')
+            # p(self.ObsSufix(obs_sufix[t]).T)
+            # p('\n***self.transProb*** ')
+            # p(self.transProb)
+
+            # p('\n***(trellis[:, t - 1, None].dot(self.ObsSufix(obs_sufix[t]).T) *self.transProb)*** ')
+            # p((trellis[:, t - 1, None].dot(self.ObsSufix(obs_sufix[t]).T) * self.transProb))
+
+            # p('\n***backpt*** ' + str(t))
+            # p(backpt)
+
+            # p('\n(np.tile(trellis[:, t - 1, None], [1, self.N]) * self.transProb)')
+            # p((np.tile(trellis[:, t - 1, None], [1, self.N]) *
+            #    self.transProb))
+
+            # p('\nPALAVRA: ' + obs_words[t])
+            if obs[t] == self.obsProb.shape[1] - 1:
+                # p('asçdlakjsdsaçldjkASDASDASDAS')
+                if obs_sufix[t] > 0:
+                    trellis[:, t] = (
+                        trellis[:, t - 1, None].dot(self.ObsSufix(obs_sufix[t]).T) * self.transProb).max(0)
+                    if (np.amax(trellis[:, t])) == 0:
+                        # trellis[:, t] = (
+                        #     trellis[:, t - 1, None].dot(self.ObsSufix(obs_sufix[t]).T) * np.ones((self.N, self.N), 'int32')).max(0)
+
+                        trellis[:, t] = np.ones((self.N, 1), 'int32').T 
+                else:
+                    # considera Prob de Obs igual para todas as tags
+                    trellis[:, t] = (
+                        trellis[:, t - 1, None].dot(np.ones((self.N, 1), 'int32').T) * self.transProb).max(0)
+
+                # p('ObsSufix(obs_sufix[t])')
+                # p(self.ObsSufix(obs_sufix[t]))
+                # p('obs_sufix[t]')
+                # p(obs_sufix[t])
+
+            else:
+                trellis[:, t] = (trellis[:, t - 1, None].dot(self.Obs(obs[t]).T) *
+                                 self.transProb).max(0)
+            #     p('Obs(obs[t])')
+            #     p(self.Obs(obs[t]))
+            #     p('obs[t]')
+            #     p(obs[t])
+
+            # p('\n***trellis*** ' + str(t))
+            # p(trellis)
+            # p(trellis[:, t])
+
             backpt[:, t] = (np.tile(trellis[:, t - 1, None], [1, self.N]) *
                             self.transProb).argmax(0)
-
-            # p('***trellis*** ' + str(t))
-            # p(trellis)
-            # p()
-
-            # p('***backpt*** ' + str(t))
-            # p(backpt)
-            # p()
+            # p('_____________________________________________')
+            # p('_____________________________________________')
 
         # termination
         tokens = [trellis[:, -1].argmax()]

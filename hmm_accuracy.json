@@ -1,308 +1,395 @@
 {
     "accuracy": {
         "LPREP": {
-            "total": 83,
-            "correct": 25,
-            "acc": 30.120481927710845
+            "total": 927,
+            "correct": 330,
+            "acc": 35.59870550161812
         },
         "VTD": {
-            "total": 576,
-            "correct": 307,
-            "acc": 53.298611111111114
+            "total": 5955,
+            "correct": 3261,
+            "acc": 54.76070528967254
         },
         "ART": {
-            "total": 817,
-            "correct": 767,
-            "acc": 93.88004895960832
+            "total": 8335,
+            "correct": 7770,
+            "acc": 93.22135572885422
         },
         "N": {
-            "total": 2323,
-            "correct": 2189,
-            "acc": 94.23159707275074
+            "total": 22514,
+            "correct": 21484,
+            "acc": 95.42506884605135
         },
         "PREP+ART": {
-            "total": 689,
-            "correct": 653,
-            "acc": 94.77503628447025
+            "total": 6561,
+            "correct": 6357,
+            "acc": 96.8907178783722
         },
         ",": {
-            "total": 720,
-            "correct": 701,
-            "acc": 97.36111111111111
+            "total": 7738,
+            "correct": 7615,
+            "acc": 98.41044197467046
         },
         "VLIG": {
-            "total": 155,
-            "correct": 142,
-            "acc": 91.61290322580645
+            "total": 1710,
+            "correct": 1533,
+            "acc": 89.64912280701755
         },
         "ADJ": {
-            "total": 726,
-            "correct": 501,
-            "acc": 69.00826446280992
+            "total": 7673,
+            "correct": 4961,
+            "acc": 64.65528476475954
         },
         "PR": {
-            "total": 142,
-            "correct": 118,
-            "acc": 83.09859154929578
+            "total": 1317,
+            "correct": 1129,
+            "acc": 85.72513287775246
         },
         "VBI": {
-            "total": 54,
-            "correct": 9,
-            "acc": 16.666666666666664
+            "total": 535,
+            "correct": 118,
+            "acc": 22.05607476635514
         },
         ".": {
-            "total": 445,
-            "correct": 432,
-            "acc": 97.07865168539325
+            "total": 4412,
+            "correct": 4311,
+            "acc": 97.7107887579329
         },
         "LADV": {
-            "total": 82,
-            "correct": 36,
-            "acc": 43.90243902439025
+            "total": 867,
+            "correct": 312,
+            "acc": 35.98615916955018
         },
         "PPS": {
-            "total": 72,
-            "correct": 66,
-            "acc": 91.66666666666666
+            "total": 777,
+            "correct": 738,
+            "acc": 94.98069498069498
         },
         "VAUX": {
-            "total": 141,
-            "correct": 72,
-            "acc": 51.06382978723404
+            "total": 1348,
+            "correct": 718,
+            "acc": 53.26409495548962
         },
         "PREP": {
-            "total": 856,
-            "correct": 799,
-            "acc": 93.3411214953271
+            "total": 8563,
+            "correct": 8084,
+            "acc": 94.40616606329557
         },
         "(": {
-            "total": 34,
-            "correct": 30,
-            "acc": 88.23529411764706
+            "total": 288,
+            "correct": 277,
+            "acc": 96.18055555555556
         },
         ")": {
-            "total": 36,
-            "correct": 31,
-            "acc": 86.11111111111111
+            "total": 281,
+            "correct": 263,
+            "acc": 93.59430604982207
         },
         "ADV": {
-            "total": 382,
-            "correct": 339,
-            "acc": 88.7434554973822
+            "total": 3714,
+            "correct": 3243,
+            "acc": 87.31825525040388
         },
         "CONJCOORD": {
-            "total": 328,
-            "correct": 310,
-            "acc": 94.51219512195121
+            "total": 3201,
+            "correct": 3027,
+            "acc": 94.56419868791002
         },
         "RES": {
-            "total": 42,
-            "correct": 27,
-            "acc": 64.28571428571429
+            "total": 347,
+            "correct": 217,
+            "acc": 62.53602305475504
         },
         ":": {
-            "total": 33,
-            "correct": 28,
-            "acc": 84.84848484848484
+            "total": 390,
+            "correct": 375,
+            "acc": 96.15384615384616
         },
         "PREP+PD": {
-            "total": 33,
-            "correct": 30,
+            "total": 297,
+            "correct": 270,
             "acc": 90.9090909090909
         },
         "VTI": {
-            "total": 126,
-            "correct": 48,
-            "acc": 38.095238095238095
+            "total": 1296,
+            "correct": 513,
+            "acc": 39.58333333333333
         },
         "VBI+PPOA": {
-            "total": 18,
-            "correct": 2,
-            "acc": 11.11111111111111
+            "total": 156,
+            "correct": 11,
+            "acc": 7.051282051282051
         },
         "PD": {
-            "total": 55,
-            "correct": 52,
-            "acc": 94.54545454545455
+            "total": 541,
+            "correct": 514,
+            "acc": 95.00924214417745
         },
         "PIND": {
-            "total": 34,
-            "correct": 19,
-            "acc": 55.88235294117647
+            "total": 383,
+            "correct": 253,
+            "acc": 66.0574412532637
         },
         "NC": {
-            "total": 146,
-            "correct": 134,
-            "acc": 91.78082191780823
+            "total": 1542,
+            "correct": 1349,
+            "acc": 87.48378728923475
         },
         "NP": {
-            "total": 500,
-            "correct": 325,
-            "acc": 65.0
+            "total": 4820,
+            "correct": 3134,
+            "acc": 65.02074688796681
         },
         "VLIG+PPOA": {
-            "total": 3,
-            "correct": 1,
+            "total": 18,
+            "correct": 6,
             "acc": 33.33333333333333
         },
         "CONJSUB": {
-            "total": 141,
-            "correct": 102,
-            "acc": 72.3404255319149
+            "total": 1214,
+            "correct": 924,
+            "acc": 76.11202635914333
         },
         "PAPASS": {
-            "total": 6,
+            "total": 55,
             "acc": 0
         },
         "-": {
-            "total": 53,
-            "correct": 52,
-            "acc": 98.11320754716981
+            "total": 630,
+            "correct": 622,
+            "acc": 98.73015873015873
         },
         "VTD+PPOA": {
-            "total": 46,
-            "correct": 5,
-            "acc": 10.869565217391305
+            "total": 475,
+            "correct": 85,
+            "acc": 17.894736842105264
         },
         "VINT": {
-            "total": 169,
-            "correct": 68,
-            "acc": 40.23668639053255
+            "total": 1491,
+            "correct": 597,
+            "acc": 40.04024144869216
         },
         "VAUX+PPOA": {
-            "total": 4,
-            "correct": 4,
-            "acc": 100.0
+            "total": 31,
+            "correct": 18,
+            "acc": 58.06451612903226
         },
         "PPR": {
-            "total": 61,
-            "correct": 53,
-            "acc": 86.88524590163934
+            "total": 534,
+            "correct": 479,
+            "acc": 89.70037453183521
         },
         "INT": {
             "total": 1,
             "acc": 0
         },
         ";": {
-            "total": 27,
-            "correct": 27,
-            "acc": 100.0
+            "total": 332,
+            "correct": 316,
+            "acc": 95.18072289156626
         },
         "PREP+PPR": {
-            "total": 8,
-            "correct": 7,
-            "acc": 87.5
+            "total": 64,
+            "correct": 53,
+            "acc": 82.8125
         },
         "[": {
-            "total": 4,
-            "correct": 1,
-            "acc": 25.0
+            "total": 25,
+            "correct": 20,
+            "acc": 80.0
         },
         "]": {
-            "total": 4,
-            "correct": 1,
-            "acc": 25.0
+            "total": 25,
+            "correct": 20,
+            "acc": 80.0
         },
         "VTD+PAPASS": {
-            "total": 6,
-            "correct": 1,
-            "acc": 16.666666666666664
+            "total": 35,
+            "correct": 3,
+            "acc": 8.571428571428571
         },
         "PPOA": {
-            "total": 70,
-            "correct": 39,
-            "acc": 55.714285714285715
+            "total": 679,
+            "correct": 412,
+            "acc": 60.67746686303387
         },
         "LCONJ": {
-            "total": 55,
-            "correct": 16,
-            "acc": 29.09090909090909
+            "total": 522,
+            "correct": 111,
+            "acc": 21.26436781609195
         },
         "\"": {
-            "total": 73,
-            "correct": 69,
-            "acc": 94.52054794520548
+            "total": 845,
+            "correct": 826,
+            "acc": 97.75147928994082
         },
         "LDEN": {
-            "total": 10,
-            "correct": 8,
-            "acc": 80.0
+            "total": 158,
+            "correct": 96,
+            "acc": 60.75949367088608
         },
         "NO": {
-            "total": 5,
-            "correct": 2,
-            "acc": 40.0
+            "total": 71,
+            "correct": 15,
+            "acc": 21.12676056338028
         },
         "ORD": {
-            "total": 15,
-            "correct": 12,
-            "acc": 80.0
+            "total": 143,
+            "correct": 121,
+            "acc": 84.61538461538461
         },
         "VTI+PPOA": {
-            "total": 8,
-            "acc": 0
+            "total": 59,
+            "correct": 2,
+            "acc": 3.389830508474576
         },
         "PDEN": {
-            "total": 1,
-            "acc": 0
-        },
-        "PTRA": {
-            "total": 2,
-            "correct": 2,
-            "acc": 100.0
-        },
-        "LP": {
-            "total": 18,
-            "acc": 0
-        },
-        "PINT": {
-            "total": 5,
-            "correct": 1,
-            "acc": 20.0
-        },
-        "?": {
-            "total": 20,
-            "correct": 20,
-            "acc": 100.0
-        },
-        "'": {
             "total": 4,
-            "acc": 0
-        },
-        "PREP+ADV": {
-            "total": 2,
-            "correct": 1,
+            "correct": 2,
             "acc": 50.0
         },
+        "PTRA": {
+            "total": 57,
+            "correct": 29,
+            "acc": 50.877192982456144
+        },
+        "LP": {
+            "total": 201,
+            "correct": 14,
+            "acc": 6.965174129353234
+        },
+        "PINT": {
+            "total": 50,
+            "correct": 15,
+            "acc": 30.0
+        },
+        "?": {
+            "total": 185,
+            "correct": 179,
+            "acc": 96.75675675675676
+        },
+        "'": {
+            "total": 15,
+            "correct": 2,
+            "acc": 13.333333333333334
+        },
+        "PREP+ADV": {
+            "total": 16,
+            "correct": 9,
+            "acc": 56.25
+        },
         "!": {
-            "total": 13,
-            "correct": 12,
-            "acc": 92.3076923076923
+            "total": 190,
+            "correct": 184,
+            "acc": 96.84210526315789
         },
         "...": {
-            "total": 17,
-            "correct": 15,
-            "acc": 88.23529411764706
+            "total": 168,
+            "correct": 161,
+            "acc": 95.83333333333334
         },
         "I": {
-            "total": 3,
-            "correct": 2,
-            "acc": 66.66666666666666
+            "total": 53,
+            "correct": 31,
+            "acc": 58.490566037735846
         },
         "PREAL": {
-            "total": 2,
-            "acc": 0
+            "total": 16,
+            "correct": 5,
+            "acc": 31.25
         },
         "PPOT": {
-            "total": 1,
-            "acc": 0
+            "total": 34,
+            "correct": 21,
+            "acc": 61.76470588235294
         },
         "VAUX!PPOA": {
             "total": 1,
             "acc": 0
         },
         "ADV+PPOA": {
+            "total": 2,
+            "correct": 1,
+            "acc": 50.0
+        },
+        "PREP+PREP": {
+            "total": 6,
+            "correct": 3,
+            "acc": 50.0
+        },
+        "VINT+PPOA": {
+            "total": 14,
+            "acc": 0
+        },
+        "PREP+N": {
+            "total": 15,
+            "correct": 9,
+            "acc": 60.0
+        },
+        "PREP+PPOA": {
             "total": 1,
+            "acc": 0
+        },
+        "VTD+PPR": {
+            "total": 1,
+            "acc": 0
+        },
+        "LPREP+ART": {
+            "total": 1,
+            "acc": 0
+        },
+        "VTD!PPOA": {
+            "total": 3,
+            "acc": 0
+        },
+        "PREP+PPOT": {
+            "total": 11,
+            "correct": 3,
+            "acc": 27.27272727272727
+        },
+        "VINT+PAPASS": {
+            "total": 3,
+            "acc": 0
+        },
+        "IL": {
+            "total": 2,
+            "acc": 0
+        },
+        "PPOA+PPOA": {
+            "total": 3,
+            "acc": 0
+        },
+        "ADV+PPR": {
+            "total": 2,
+            "correct": 1,
+            "acc": 50.0
+        },
+        "PREP+ADJ": {
+            "total": 3,
+            "acc": 0
+        },
+        "AUX": {
+            "total": 3,
+            "acc": 0
+        },
+        "VTD+PREAL": {
+            "total": 1,
+            "acc": 0
+        },
+        "VINT+PREAL": {
+            "total": 3,
+            "acc": 0
+        },
+        "VTI+PREAL": {
+            "total": 1,
+            "acc": 0
+        },
+        "VBI+PPR": {
+            "total": 1,
+            "acc": 0
+        },
+        "VBI+PAPASS": {
+            "total": 2,
             "acc": 0
         }
     }
