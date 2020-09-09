@@ -16,7 +16,7 @@
  - hmm_accuracy: acurácia de cada tag
  - hmm_learning_apriori: matriz apriori
  - hmm_learning_emissions: matriz de observações
- - hmm_learning_sufixes: matriz de sufixos (para tratamento )
+ - hmm_learning_sufixes: matriz de sufixos
  - hmm_learning_transitions: matriz de transição 
  - hmm_testing_data: dados de teste
  - hmm_unknown_words: palavras desconhecidas
@@ -24,13 +24,16 @@
  - Obs.: Os arquivos json estão divididos em chaves de 0 a 9, que correspondem ao índice ten_fold (cross-validation), de forma a manter sempre os dados de aprendizado diferentes dos dados de teste.
 
 **Resultados**: hmm_relatorio.txt
+
 - Taxa de acerto geral: 86.14% 
 - Qtde de tags processadas: 104963 
 - Qtde de tags processadas corretamente: 90419 
 
+
 - Taxa de acerto da classe VTD
 - VTD: 72.31% 
 - Total da classe: 72.31%
+
 
 - Taxa de acerto da classe ART
 - ART: 95.46% 
