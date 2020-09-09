@@ -231,18 +231,18 @@ def decode_ten_fold(ten_fold_index):
 
         i = 0
         for tag in sentence_tags:
-            p("%29s   " % str(sentence_words[i]), end='')
-            p("%10s   " % str(sentence_tags[i]), end='')
-            p("%10s   " % str(tagset[tags_decoded[i]]))
+            # p("%29s   " % str(sentence_words[i]), end='')
+            # p("%10s   " % str(sentence_tags[i]), end='')
+            # p("%10s   " % str(tagset[tags_decoded[i]]))
             register_accuracy(sentence_tags[i], tagset[tags_decoded[i]])
             i += 1
         # p()
 
         # del decoder
 
-        p(' sentence ' + str(index_testing_sentences) +
-            ' of ' + str(qty_testing_sentences))
-    p()
+    p(' sentence ' + str(index_testing_sentences) +
+        ' of ' + str(qty_testing_sentences))
+    # p()
 # print(sentence_words)
 # print(tags_real)
 # print(tags_decoded)
@@ -251,7 +251,7 @@ def decode_ten_fold(ten_fold_index):
 with open('hmm_unknown_words.txt', mode='w', encoding="utf8") as file:
     file.write("")
 
-for ten_fold_index_i in range(0, 1):
+for ten_fold_index_i in range(0, 10):
     p('***ten_fold_index_i*** ' + str(ten_fold_index_i))
     decode_ten_fold(ten_fold_index_i)
     # p('\n\n\n')
@@ -276,7 +276,9 @@ for tag in accuracy:
 acc_total = sum_correct / sum_total * 100
 
 with open('./hmm_relatorio.txt', mode='w') as file:
-    file.write('Taxa de acerto geral: %.2f%% \n\n' % acc_total)
+    file.write('Taxa de acerto geral: %.2f%% \n' % acc_total)
+    file.write('Qtde de tags processadas: %i \n' % sum_total)
+    file.write('Qtde de tags processadas corretamente: %i \n\n' % sum_correct)
     for tag in accuracy:
         # for tag, v in accuracy.items():
         # if re.search('[a-zA-Z]', tag):

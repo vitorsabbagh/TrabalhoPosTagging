@@ -1,186 +1,332 @@
-Taxa de acerto geral: 82.56% 
-
-Taxa de acerto da classe LPREP
-LPREP: 54.55% 
-Total da classe: 54.55%
+Taxa de acerto geral: 86.14% 
+Qtde de tags processadas: 104963 
+Qtde de tags processadas corretamente: 90419 
 
 Taxa de acerto da classe VTD
-VTD: 72.06% 
-Total da classe: 72.06%
+VTD: 72.31% 
+Total da classe: 72.31%
 
 Taxa de acerto da classe ART
-ART: 90.43% 
-Total da classe: 90.43%
+ART: 95.46% 
+Total da classe: 95.46%
 
 Taxa de acerto da classe N
-N: 86.18% 
-Total da classe: 86.18%
+N: 92.77% 
+Total da classe: 92.77%
 
 Taxa de acerto da classe PREP+ART
-PREP+ART: 91.43% 
-Total da classe: 91.43%
+PREP+ART: 95.82% 
+Total da classe: 95.82%
+
+Taxa de acerto da classe LPREP
+LPREP: 38.19% 
+Total da classe: 38.19%
 
 Taxa de acerto da classe ,
-,: 84.00% 
-Total da classe: 84.00%
+,: 96.83% 
+Total da classe: 96.83%
 
 Taxa de acerto da classe VLIG
-VLIG: 77.78% 
-Total da classe: 77.78%
+VLIG: 87.19% 
+Total da classe: 87.19%
 
 Taxa de acerto da classe ADJ
-ADJ: 82.97% 
-Total da classe: 82.97%
+ADJ: 81.09% 
+Total da classe: 81.09%
 
 Taxa de acerto da classe PR
-PR: 88.89% 
-Total da classe: 88.89%
+PR: 84.51% 
+Total da classe: 84.51%
 
 Taxa de acerto da classe VBI
-VBI: 40.00% 
-Total da classe: 40.00%
+VBI: 27.48% 
+Total da classe: 27.48%
 
 Taxa de acerto da classe .
-.: 95.83% 
-Total da classe: 95.83%
+.: 97.82% 
+Total da classe: 97.82%
 
 Taxa de acerto da classe LADV
-LADV: 75.00% 
-Total da classe: 75.00%
+LADV: 36.56% 
+Total da classe: 36.56%
 
 Taxa de acerto da classe PPS
-PPS: 71.43% 
-Total da classe: 71.43%
+PPS: 94.47% 
+Total da classe: 94.47%
 
 Taxa de acerto da classe VAUX
-VAUX: 75.86% 
-Total da classe: 75.86%
+VAUX: 69.58% 
+Total da classe: 69.58%
 
 Taxa de acerto da classe PREP
-PREP: 88.39% 
-Total da classe: 88.39%
+PREP: 92.99% 
+Total da classe: 92.99%
 
 Taxa de acerto da classe (
-(: 92.31% 
-Total da classe: 92.31%
+(: 95.49% 
+Total da classe: 95.49%
 
 Taxa de acerto da classe )
-): 100.00% 
-Total da classe: 100.00%
+): 96.09% 
+Total da classe: 96.09%
 
 Taxa de acerto da classe ADV
-ADV: 81.25% 
-Total da classe: 81.25%
+ADV: 88.21% 
+Total da classe: 88.21%
 
 Taxa de acerto da classe CONJCOORD
-CONJCOORD: 84.44% 
-Total da classe: 84.44%
+CONJCOORD: 93.91% 
+Total da classe: 93.91%
 
 Taxa de acerto da classe RES
-RES: 50.00% 
-Total da classe: 50.00%
+RES: 68.88% 
+Total da classe: 68.88%
 
 Taxa de acerto da classe :
-:: 80.00% 
-Total da classe: 80.00%
+:: 93.33% 
+Total da classe: 93.33%
 
 Taxa de acerto da classe PREP+PD
-PREP+PD: 87.50% 
-Total da classe: 87.50%
+PREP+PD: 90.91% 
+Total da classe: 90.91%
 
 Taxa de acerto da classe VTI
-VTI: 57.14% 
-Total da classe: 57.14%
+VTI: 50.08% 
+Total da classe: 50.08%
 
 Taxa de acerto da classe VBI+PPOA
-VBI+PPOA: 75.00% 
-Total da classe: 75.00%
+VBI+PPOA: 28.85% 
+Total da classe: 28.85%
 
 Taxa de acerto da classe PD
-PD: 76.92% 
-Total da classe: 76.92%
+PD: 92.98% 
+Total da classe: 92.98%
 
 Taxa de acerto da classe PIND
-PIND: 20.00% 
-Total da classe: 20.00%
+PIND: 68.67% 
+Total da classe: 68.67%
 
 Taxa de acerto da classe NC
-NC: 66.67% 
-Total da classe: 66.67%
+NC: 89.75% 
+Total da classe: 89.75%
 
 Taxa de acerto da classe NP
-NP: 63.64% 
-Total da classe: 63.64%
+NP: 73.57% 
+Total da classe: 73.57%
 
 Taxa de acerto da classe VLIG+PPOA
-VLIG+PPOA: 0.00% 
-Total da classe: 0.00%
+VLIG+PPOA: 38.89% 
+Total da classe: 38.89%
 
 Taxa de acerto da classe CONJSUB
-CONJSUB: 84.62% 
-Total da classe: 84.62%
+CONJSUB: 77.59% 
+Total da classe: 77.59%
 
 Taxa de acerto da classe PAPASS
-PAPASS: 100.00% 
-Total da classe: 100.00%
+PAPASS: 0.00% 
+Total da classe: 0.00%
 
 Taxa de acerto da classe -
--: 50.00% 
-Total da classe: 50.00%
+-: 98.25% 
+Total da classe: 98.25%
 
 Taxa de acerto da classe VTD+PPOA
-VTD+PPOA: 100.00% 
-Total da classe: 100.00%
+VTD+PPOA: 45.68% 
+Total da classe: 45.68%
 
 Taxa de acerto da classe VINT
-VINT: 73.33% 
-Total da classe: 73.33%
+VINT: 45.14% 
+Total da classe: 45.14%
 
 Taxa de acerto da classe VAUX+PPOA
-VAUX+PPOA: 100.00% 
-Total da classe: 100.00%
+VAUX+PPOA: 61.29% 
+Total da classe: 61.29%
 
 Taxa de acerto da classe PPR
-PPR: 100.00% 
-Total da classe: 100.00%
+PPR: 93.07% 
+Total da classe: 93.07%
 
 Taxa de acerto da classe INT
 INT: 0.00% 
 Total da classe: 0.00%
 
-Taxa de acerto da classe PREP+PPR
-PREP+PPR: 50.00% 
-Total da classe: 50.00%
-
 Taxa de acerto da classe ;
-;: 0.00% 
-Total da classe: 0.00%
+;: 94.58% 
+Total da classe: 94.58%
 
-Taxa de acerto da classe PPOA
-PPOA: 60.00% 
-Total da classe: 60.00%
-
-Taxa de acerto da classe LCONJ
-LCONJ: 50.00% 
-Total da classe: 50.00%
-
-Taxa de acerto da classe "
-": 50.00% 
-Total da classe: 50.00%
-
-Taxa de acerto da classe VTD+PAPASS
-VTD+PAPASS: 0.00% 
-Total da classe: 0.00%
+Taxa de acerto da classe PREP+PPR
+PREP+PPR: 85.94% 
+Total da classe: 85.94%
 
 Taxa de acerto da classe [
-[: 50.00% 
-Total da classe: 50.00%
+[: 80.00% 
+Total da classe: 80.00%
 
 Taxa de acerto da classe ]
-]: 100.00% 
-Total da classe: 100.00%
+]: 84.00% 
+Total da classe: 84.00%
+
+Taxa de acerto da classe VTD+PAPASS
+VTD+PAPASS: 17.14% 
+Total da classe: 17.14%
+
+Taxa de acerto da classe PPOA
+PPOA: 82.92% 
+Total da classe: 82.92%
+
+Taxa de acerto da classe LCONJ
+LCONJ: 22.80% 
+Total da classe: 22.80%
+
+Taxa de acerto da classe "
+": 97.28% 
+Total da classe: 97.28%
+
+Taxa de acerto da classe LDEN
+LDEN: 58.23% 
+Total da classe: 58.23%
+
+Taxa de acerto da classe NO
+NO: 30.99% 
+Total da classe: 30.99%
 
 Taxa de acerto da classe ORD
-ORD: 100.00% 
-Total da classe: 100.00%
+ORD: 81.82% 
+Total da classe: 81.82%
+
+Taxa de acerto da classe VTI+PPOA
+VTI+PPOA: 6.78% 
+Total da classe: 6.78%
+
+Taxa de acerto da classe PDEN
+PDEN: 50.00% 
+Total da classe: 50.00%
+
+Taxa de acerto da classe PTRA
+PTRA: 61.40% 
+Total da classe: 61.40%
+
+Taxa de acerto da classe LP
+LP: 10.95% 
+Total da classe: 10.95%
+
+Taxa de acerto da classe PINT
+PINT: 28.00% 
+Total da classe: 28.00%
+
+Taxa de acerto da classe ?
+?: 96.22% 
+Total da classe: 96.22%
+
+Taxa de acerto da classe '
+': 13.33% 
+Total da classe: 13.33%
+
+Taxa de acerto da classe PREP+ADV
+PREP+ADV: 56.25% 
+Total da classe: 56.25%
+
+Taxa de acerto da classe !
+!: 95.26% 
+Total da classe: 95.26%
+
+Taxa de acerto da classe ...
+...: 95.24% 
+Total da classe: 95.24%
+
+Taxa de acerto da classe I
+I: 60.38% 
+Total da classe: 60.38%
+
+Taxa de acerto da classe PREAL
+PREAL: 0.00% 
+Total da classe: 0.00%
+
+Taxa de acerto da classe PPOT
+PPOT: 64.71% 
+Total da classe: 64.71%
+
+Taxa de acerto da classe VAUX!PPOA
+VAUX!PPOA: 0.00% 
+Total da classe: 0.00%
+
+Taxa de acerto da classe ADV+PPOA
+ADV+PPOA: 50.00% 
+Total da classe: 50.00%
+
+Taxa de acerto da classe PREP+PREP
+PREP+PREP: 50.00% 
+Total da classe: 50.00%
+
+Taxa de acerto da classe VINT+PPOA
+VINT+PPOA: 0.00% 
+Total da classe: 0.00%
+
+Taxa de acerto da classe PREP+N
+PREP+N: 66.67% 
+Total da classe: 66.67%
+
+Taxa de acerto da classe PREP+PPOA
+PREP+PPOA: 0.00% 
+Total da classe: 0.00%
+
+Taxa de acerto da classe VTD+PPR
+VTD+PPR: 0.00% 
+Total da classe: 0.00%
+
+Taxa de acerto da classe LPREP+ART
+LPREP+ART: 0.00% 
+Total da classe: 0.00%
+
+Taxa de acerto da classe VTD!PPOA
+VTD!PPOA: 0.00% 
+Total da classe: 0.00%
+
+Taxa de acerto da classe PREP+PPOT
+PREP+PPOT: 27.27% 
+Total da classe: 27.27%
+
+Taxa de acerto da classe VINT+PAPASS
+VINT+PAPASS: 0.00% 
+Total da classe: 0.00%
+
+Taxa de acerto da classe IL
+IL: 0.00% 
+Total da classe: 0.00%
+
+Taxa de acerto da classe PPOA+PPOA
+PPOA+PPOA: 33.33% 
+Total da classe: 33.33%
+
+Taxa de acerto da classe ADV+PPR
+ADV+PPR: 50.00% 
+Total da classe: 50.00%
+
+Taxa de acerto da classe PREP+ADJ
+PREP+ADJ: 0.00% 
+Total da classe: 0.00%
+
+Taxa de acerto da classe AUX
+AUX: 0.00% 
+Total da classe: 0.00%
+
+Taxa de acerto da classe VTD+PREAL
+VTD+PREAL: 0.00% 
+Total da classe: 0.00%
+
+Taxa de acerto da classe VINT+PREAL
+VINT+PREAL: 0.00% 
+Total da classe: 0.00%
+
+Taxa de acerto da classe VTI+PREAL
+VTI+PREAL: 0.00% 
+Total da classe: 0.00%
+
+Taxa de acerto da classe VBI+PPR
+VBI+PPR: 0.00% 
+Total da classe: 0.00%
+
+Taxa de acerto da classe VBI+PAPASS
+VBI+PAPASS: 0.00% 
+Total da classe: 0.00%
 

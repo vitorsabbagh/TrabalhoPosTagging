@@ -83,7 +83,7 @@ def separate_and_learn(filename, ten_fold_index):
 if __name__ == "__main__":
 
     for ten_fold_index_i in range(0, 10):
-        separate_and_learn(r"./data/corpusdidactic.txt", ten_fold_index_i)
+        # separate_and_learn(r"./data/corpusdidactic.txt", ten_fold_index_i)
         separate_and_learn(r"./data/corpus100.txt", ten_fold_index_i)
 
     import pprint
